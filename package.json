@@ -1,0 +1,26 @@
+{
+  "name": "namaste",
+  "version": "1.0.0",
+  "description": "This is a namaste-react by Akshaya Saini",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VickySharma13916/NamasteReact.git"
+  },
+  "keywords": [
+    "react",
+    "namaste-react"
+  ],
+  "author": "Vicky Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VickySharma13916/NamasteReact/issues"
+  },
+  "homepage": "https://github.com/VickySharma13916/NamasteReact#readme",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
