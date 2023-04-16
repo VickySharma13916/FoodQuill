@@ -21,10 +21,11 @@
             Lower Element
         </div>
     </header>
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="./App.js"></script>
-    <!-- The sequence of file is matter in react App. -->
+    <!-- CND Link is not the prefered method to inject react in  our project because it take a alot of time to fetch from external link -->
+    <!-- <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script> -->
+    <script type="module" src="./App.js"></script>
+    <!-- Type='module' in react show that it is not a browser script but a module -->
 </body>
 
 </html>
