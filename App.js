@@ -23,7 +23,7 @@ const Title = () => <h1>Vicky Sharma</h1>;
 const HeadingComponent = () => {
   return (
     //React Fragment -> It behaves like an empty tag by React
-    //<></> empty tag by jsx
+    //<></> empty tag by jsx this is the short hand for the React.Fragment
     <>
       <div className="container">
         <h1 className="heading">Namaste React</h1>
