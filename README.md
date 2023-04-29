@@ -29,3 +29,28 @@ Main is not required on production mode of app.
 "description": "This",
 "main" : "App.js"
 main is only required for development mode.
+
+Food Ordering App
+
+- Header
+- -logo
+- -nav-item
+- Body
+- -search
+- -restaurant container
+- --restaurant card
+- Footer
+- -Links
+- -copyright
+- -Address
+- -contact
+
+import and export
+
+Default
+export default variable
+import variable from "path"
+
+Named
+export const variable = '';
+import {variable} from "path"

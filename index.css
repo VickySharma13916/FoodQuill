@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 body {
     margin: 0%;
     padding: 0%;
@@ -50,24 +52,25 @@ body {
 }
 
 .res_container {
-    display: grid;
-    grid-template-columns: 300px 300px 300px 300px;
-    grid-gap: 10px;
-    justify-items: center;
-    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
+    place-items: center;
+    display: grid;
+    justify-items: center;
+    font-family: 'Nunito', sans-serif;
 }
 
 .restaurant_card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid lightblue;
-    background-color: lightblue;
-    padding: 1rem;
-    border-radius: 10px;
+    height: 500px;
     cursor: pointer;
+    background-color: #e0f1f7;
+    border-radius: 10px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    display: flex;
 }
 
 .restaurant_card:hover {
@@ -76,7 +79,39 @@ body {
 
 .restaurant_card img {
     border-radius: 10px;
-    width: 250px;
+    width: 280px;
     height: 250px;
     object-fit: cover;
+}
+
+.res_add {
+    -webkit-line-clamp: 2;
+    height: 35px;
+    width: 100%;
+    -webkit-box-orient: vertical;
+    line-height: 17px;
+    display: -webkit-box;
+    overflow: hidden;
+}
+
+.res_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0.5rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.resdata {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cost2 {
+    font-weight: 600;
+}
+
+.rating {
+    font-weight: 600;
 }
