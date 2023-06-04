@@ -4,6 +4,7 @@ body {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 
@@ -23,9 +24,10 @@ body {
     align-items: center;
 }
 
-.nav-link li {
+.nav-link div {
     text-decoration: none;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .logo img {
@@ -37,7 +39,7 @@ body {
 }
 
 .search {
-    width: 30%;
+    text-align: center;
     margin: 1rem auto;
 }
 
@@ -45,20 +47,20 @@ body {
     border: 1px solid #000;
     padding: 1rem;
     border-radius: 25px;
-    width: 100%;
-    margin: 1rem auto;
+    width: 30%;
+    height: 10px;
+    margin: 1rem 20px;
     font-size: 18px;
     color: #000;
 }
 
 .res_container {
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     justify-content: center;
     place-items: center;
     display: grid;
     justify-items: center;
-    font-family: 'Nunito', sans-serif;
 }
 
 .restaurant_card {
@@ -79,7 +81,7 @@ body {
 
 .restaurant_card img {
     border-radius: 10px;
-    width: 280px;
+    width: 400px;
     height: 250px;
     object-fit: cover;
 }
@@ -114,4 +116,60 @@ body {
 
 .rating {
     font-weight: 600;
+}
+
+.filter-btn {
+    border: 1px solid lightgray;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(40, 0, 85);
+}
+
+.filter-btn:hover {
+    border: 2px solid lightgray;
+    background-color: #e0f1f7;
+}
+
+.shimmer-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    width: 100%;
+}
+
+.shimmer-cards {
+    height: 500px;
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.shimmer_immer {
+    margin-top: 20px;
+    border-radius: 10px;
+    width: 400px;
+    height: 250px;
+    background-color: #fbfbfb;
+}
+
+.login {
+    background-color: lightgray;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login:hover {
+    color: #fbfbfb;
+    background-color: #000;
+
 }

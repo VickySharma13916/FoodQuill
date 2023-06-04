@@ -3,6 +3,7 @@ The most comprehensive React Learning by Akshaya Saini.
 
 #Parcel
 Benefit of parcel
+
 - 1 Dev Build
 - 2 Local Server
 - 3 HMR = Hot Module Replacement
@@ -14,7 +15,7 @@ Benefit of parcel
 - 9 Compress
 - 10 Consistent Hashing
 - 11 Code Splitting
-- 12 Differential Bundling - to support older Browsers  
+- 12 Differential Bundling - to support older Browsers
 - 13 Diagnostics
 - 14 Good Error Handling
 - 15 Host on HTTPs also
@@ -24,11 +25,11 @@ Benefit of parcel
 #package.json file
 Main is not required on production mode of app.
 
- "name": "namaste",
- "version": "1.0.0",
- "description": "This",
- "main" : "App.js"
- main is only required for development mode.
+"name": "namaste",
+"version": "1.0.0",
+"description": "This",
+"main" : "App.js"
+main is only required for development mode.
 
 Food Ordering App
 
@@ -54,3 +55,12 @@ import variable from "path"
 Named
 export const variable = '';
 import {variable} from "path"
+
+#React Hooks
+
+(normal JS utility Function)
+
+- UseState() - SuperPowerful state variable
+- UseEffect()
+- UseCallback()
+- UseRef()

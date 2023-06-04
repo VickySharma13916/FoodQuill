@@ -21,7 +21,9 @@ const RestaurantCard = ({ restaurantData }) => {
       <div className="res_add">{address}</div>
       <div className="cuisines">{cuisines.join(", ")}</div>
       <div className="resdata">
-        <div className="rating">{avgRating} stars</div>
+        <div className="rating">
+          {avgRating > 0 ? avgRating + " star" : "N/A"}
+        </div>
         <div className="available">
           {availability?.opened ? "Restaurant open" : "Restaurant closed"}
         </div>
