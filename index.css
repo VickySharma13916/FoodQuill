@@ -24,8 +24,11 @@ body {
     align-items: center;
 }
 
-.nav-link div {
+.nav-link a {
     text-decoration: none;
+}
+
+.nav-link div {
     font-size: 1rem;
     font-weight: 600;
 }
@@ -61,6 +64,11 @@ body {
     place-items: center;
     display: grid;
     justify-items: center;
+}
+
+.res_container a {
+    text-decoration: none;
+    color: #000;
 }
 
 .restaurant_card {
@@ -169,7 +177,7 @@ body {
 }
 
 .login:hover {
-    color: #fbfbfb;
-    background-color: #000;
+    color: #fff;
+    background-color: rgb(37, 37, 235);
 
 }

@@ -56,7 +56,7 @@ Named
 export const variable = '';
 import {variable} from "path"
 
-#React Hooks
+# React Hooks
 
 (normal JS utility Function)
 
@@ -64,3 +64,9 @@ import {variable} from "path"
 - UseEffect()
 - UseCallback()
 - UseRef()
+
+# Types of Routing in web app
+
+- Client Side Routing {When the html pages comes from frontend side component via routing}
+- Server Side Routing {when the page comes from the server side with network call}
+- 
