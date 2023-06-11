@@ -50,7 +50,7 @@ const RestaurantMenu = () => {
           <div
             className="description"
             style={{
-              height: "100px",
+              height: "90px",
               overflow: "hidden",
               width: "70%",
             }}
