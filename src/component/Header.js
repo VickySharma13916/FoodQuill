@@ -3,7 +3,7 @@ import { LOGO_URL } from "../Utils/constant";
 import { Link, useLocation, useParams } from "react-router-dom";
 const Header = () => {
   const [login, setLogin] = useState(true);
-  
+
   //If their is no dependency array in useEffect component called in every rendered
   //If empty dependency array is put it in the useEffect than it called in first or initial render(just once)
   //If their is some variable or state in depencencies array than it called when state is updated ([login] => it will render when login is update)
@@ -13,7 +13,9 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo">
-        <img src={LOGO_URL} alt="logo" />
+        <Link to="/">
+          <img src={LOGO_URL} alt="logo" />
+        </Link>
       </div>
       <div className="nav-link">
         <Link to="/">
