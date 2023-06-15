@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Body = () => {
   // Local State Variable - super powerful variable
@@ -31,6 +31,15 @@ const Body = () => {
   const filterRestraurant = restaurant?.filter((item) =>
     item?.data?.name?.toLowerCase().includes(searchRes?.toLowerCase())
   );
+
+  const navigate = useNavigate();
+  const openProfile = (item) => {
+    navigate(`/restaurants/${item?.data?.id}`, {
+      state: {
+        item: item,
+      },
+    });
+  };
 
   return (
     <div className="food_body">
@@ -62,7 +71,12 @@ const Body = () => {
         <div className="res_container">
           {filterRestraurant?.map((item) => {
             return (
-              <Link to={`restaurants/${item.data.id}`} key={item.data.id}>
+              <Link
+                to={`restaurants/${item.data.id}`}
+                state={{ item: item }}
+                key={item.data.id}
+                onClick={() => openProfile(item)}
+              >
                 <RestaurantCard restaurantData={item} />
               </Link>
             );

@@ -73,6 +73,9 @@ body {
 
 .restaurant_card {
     height: max-content;
+    min-width: 350px;
+    max-width: 400px;
+    width: 100%;
     cursor: pointer;
     background-color: #e0f1f7;
     border-radius: 10px;

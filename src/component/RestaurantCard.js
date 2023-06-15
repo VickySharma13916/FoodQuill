@@ -1,7 +1,10 @@
 import React from "react";
 import { CDN_URL } from "../Utils/constant";
+import { useLocation } from "react-router-dom";
 
 const RestaurantCard = ({ restaurantData }) => {
+  const location = useLocation();
+  console.log(location, 7);
   const {
     name,
     cloudinaryImageId,

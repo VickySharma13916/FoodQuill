@@ -11,9 +11,11 @@ const RestaurantMenu = () => {
     const data = await fetch(MENU_API + resId);
     const json = await data.json();
     const resJson = json.data.cards[0].card.card.info;
-    const resMenuJson =
-      json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
-        .itemCards;
+    const resMenuJson = json.data.cards[2].groupedCard
+      ? json.data.cards[2].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
+          .itemCards
+      : json.data.cards[3].groupedCard.cardGroupMap.REGULAR.cards[1].card.card
+          .itemCards;
     setRestaurantMenu(resJson);
     setRestMenu(resMenuJson);
   };
@@ -25,7 +27,6 @@ const RestaurantMenu = () => {
   const RestraurantMenuCard = ({ restData }) => {
     const { name, imageId, category, description, ratings, inStock, price } =
       restData;
-    console.log(restData);
     return (
       <div className="restaurant_card">
         <div className="res_img">
@@ -69,7 +70,6 @@ const RestaurantMenu = () => {
       </div>
     );
   };
-  console.log(restaurantMenu);
   return restaurantMenu.length <= 0 ? (
     <Shimmer />
   ) : (
@@ -79,6 +79,7 @@ const RestaurantMenu = () => {
           display: "flex",
           justifyContent: "space-between",
           alignItems: "flex-start",
+          flexWrap: "wrap",
         }}
       >
         <div className="res_img">
@@ -110,7 +111,7 @@ const RestaurantMenu = () => {
       </div>
       <div className="menuItems">
         <h2> Menu Items </h2>
-        <div className="res_container" style={{ padding: "1.5rem" }}>
+        <div className="res_container">
           {restMenu &&
             restMenu?.map((item) => (
               <RestraurantMenuCard
