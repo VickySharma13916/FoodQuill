@@ -188,3 +188,11 @@ body {
 .rest_menu_card {
     position: relative;
 }
+
+.user-card {
+    border: 1px solid lightgray;
+    width: 30%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 5px;
+}
