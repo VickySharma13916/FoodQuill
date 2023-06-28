@@ -3,36 +3,57 @@ class UserClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      count: 0,
+      userInfo: null,
     };
-    console.log("Constructor");
   }
-  componentDidMount() {
-    console.log("child Component did Mount");
+
+  // when component is render successfully 1st time
+  async componentDidMount() {
     //API Call after render the component
+    const { name } = this.props;
+    const data = await fetch(`https://api.github.com/users/${name}`);
+    const json = await data.json();
+    this.setState({
+      userInfo: [json],
+    });
   }
+
+  // when component is update successfully
+  componentDidUpdate() {
+    console.log("component did update");
+  }
+
+  // when component is unmounted successfully
+  componentWillUnmount() {
+    console.log("component will unmount");
+  }
+
   render() {
-    const { name, address } = this.props;
     //Never update state variable directly
-    const { count } = this.state;
-    console.log("render");
+    const { userInfo } = this.state;
     return (
       <>
-        <h2>{name}</h2>
-        <h3>Profession:- Software Engineer</h3>
-        <h3>Contact:- 7678410858</h3>
-        <h3>Email Id:- VickySharma13916@gmail.com</h3>
-        <h3>Address:- {address}</h3>
-        <h3>Count :- {count}</h3>
-        <button
-          onClick={() => {
-            this.setState({
-              count: this.state.count + 1,
-            });
-          }}
-        >
-          Update Count
-        </button>
+        {userInfo &&
+          userInfo?.map((item) => (
+            <div className="card" key={item?.id}>
+              <img src={item?.avatar_url} alt="user" loading="lazy" className="img-fluid" />
+              <div
+                className="card-body card-height"
+                style={{ minHeight: "200px" }}
+              >
+                <h2>{item?.name}</h2>
+                <div>
+                  Github Id:-
+                  <a style={{ textDecoration: "none" }} href={item?.html_url}>
+                    {item?.html_url}
+                  </a>
+                </div>
+                <div>Followers:- {item?.followers}</div>
+                <div>Following:- {item?.following}</div>
+                <div>Repositories:- {item?.public_repos}</div>
+              </div>
+            </div>
+          ))}
       </>
     );
   }

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './node_modules/bootstrap/dist/css/bootstrap.min.css';
 
 body {
     margin: 0%;
@@ -7,6 +8,17 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+.card-height {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 0;
+    flex-grow: 1;
+}
+
+.card {
+    box-shadow: 0 0 5px 2px lightgray;
+}
 
 .header {
     display: flex;
@@ -19,13 +31,32 @@ body {
 
 .nav-link {
     display: flex;
-    width: 30%;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav-link a {
+    margin: 0 5px;
     text-decoration: none;
+}
+
+.rating-star {
+    background: #19e916;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.rating-star svg {
+    margin-top: -3px;
+    margin-left: 5px;
+}
+
+.no-rating {
+    background: #f53c1b;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 .nav-link div {
@@ -110,9 +141,6 @@ body {
 .res_title {
     font-size: 20px;
     font-weight: 600;
-    margin: 0.5rem 0;
-    text-align: left;
-    width: 100%;
 }
 
 .resdata {
@@ -145,28 +173,31 @@ body {
 }
 
 .shimmer-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 16px;
-    width: 100%;
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 24px;
+    margin-bottom: 25px;
+    border-radius: 5px;
 }
 
 .shimmer-cards {
-    height: 500px;
+    height: 400px;
     cursor: pointer;
     background-color: lightgray;
     border-radius: 10px;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .shimmer_immer {
-    margin-top: 20px;
-    border-radius: 10px;
-    width: 400px;
+    width: 315px;
     height: 250px;
     background-color: #fbfbfb;
+    border-radius: 10px 10px 0 0;
 }
 
 .login {
@@ -190,9 +221,14 @@ body {
 }
 
 .user-card {
-    border: 1px solid lightgray;
-    width: 30%;
+    width: 35%;
     margin: 1rem auto;
     padding: 1rem;
-    border-radius: 5px;
+}
+
+.description-text {
+    overflow: hidden;
+    white-space: pre-wrap;
+    line-height: 1.5rem;
+    height: 75px;
 }

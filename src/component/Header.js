@@ -30,7 +30,7 @@ const Header = () => {
         <Link to="/cart">
           <div>Cart</div>
         </Link>
-        <div className="login" onClick={() => setLogin(!login)}>
+        <div className="login ms-2" onClick={() => setLogin(!login)}>
           {login ? "Login" : "Logout"}
         </div>
       </div>

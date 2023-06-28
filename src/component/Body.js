@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import { Col, Container, Row } from "react-bootstrap";
 
 const Body = () => {
   // Local State Variable - super powerful variable
@@ -15,7 +16,11 @@ const Body = () => {
     );
     const json = await data.json();
     //optional chaining
-    setRestaurant(json?.data?.cards[2]?.data?.data?.cards);
+    setRestaurant(
+      json?.data?.cards[2]
+        ? json?.data?.cards[2]?.data?.data?.cards
+        : json?.data?.cards[0]?.data?.data?.cards
+    );
     setShowRestaurant(false);
   };
 
@@ -34,44 +39,56 @@ const Body = () => {
 
   return (
     <div className="food_body">
-      <div className="search">
-        <input
-          type="text"
-          name="search"
-          id="search"
-          placeholder="Search food restaurant"
-          value={searchRes}
-          onChange={(e) => handleSearch(e)}
-          className="search_restaurant"
-        />
-        <button
-          className="filter-btn"
-          onClick={() => {
-            const listOfRestaurant = restaurant.filter(
-              (item) => item.data.avgRating >= 4
-            );
-            setRestaurant(listOfRestaurant);
-          }}
-        >
-          Top Rated Restaurant
-        </button>
-      </div>
+      <Row xs={12} md={8} className="gap-3 justify-content-between px-3">
+        <Col xs={12} md={6} className="pe-md-3 pe-sm-0 ps-0">
+          <form className="d-flex">
+            <input
+              className="form-control"
+              type="search"
+              aria-label="Search"
+              name="search"
+              id="search"
+              placeholder="Search food restaurant"
+              value={searchRes}
+              onChange={(e) => handleSearch(e)}
+            />
+          </form>
+        </Col>
+        <Col xs={12} md={4} className="text-end pe-0">
+          <button
+            className="btn btn-secondary"
+            onClick={() => {
+              const listOfRestaurant = restaurant.filter(
+                (item) => item.data.avgRating >= 4
+              );
+              setRestaurant(listOfRestaurant);
+            }}
+          >
+            Top Rated Restaurant
+          </button>
+        </Col>
+      </Row>
+
       {showRestaurant ? (
         <Shimmer />
       ) : (
-        <div className="res_container">
-          {filterRestraurant?.map((item) => {
-            return (
-              <Link
-                to={`restaurants/${item.data.id}`}
-                state={{ item: item }}
-                key={item.data.id}
-              >
-                <RestaurantCard restaurantData={item} />
-              </Link>
-            );
-          })}
-        </div>
+        <Container className="p-0" fluid={true}>
+          <Row xs={1} sm={2} md={3} lg={4}>
+            {filterRestraurant?.map((item) => {
+              return (
+                <Col className="p-3" key={item.data.id}>
+                  <Link
+                    to={`restaurants/${item.data.id}`}
+                    state={{ item: item }}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <RestaurantCard restaurantData={item} />
+                  </Link>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
       )}
     </div>
   );
