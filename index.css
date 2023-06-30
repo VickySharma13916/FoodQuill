@@ -20,12 +20,11 @@ body {
     box-shadow: 0 0 5px 2px lightgray;
 }
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid lightgray;
-    padding: 1rem;
-    align-items: center;
+.nav_bar_box {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #fff;
     box-shadow: 0 0 4px 4px lightgray;
 }
 
@@ -208,6 +207,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: fit-content;
 }
 
 .login:hover {

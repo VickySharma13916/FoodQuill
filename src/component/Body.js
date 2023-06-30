@@ -3,8 +3,13 @@ import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import { Col, Container, Row } from "react-bootstrap";
+import useOnlineStatus from "../Utils/useOnlineStatus";
 
 const Body = () => {
+  const online = useOnlineStatus();
+  if (!online) {
+    return <h1>You are Online, Please check your internet connection</h1>;
+  }
   // Local State Variable - super powerful variable
   // Whenever a state variable is updated, react trigger a reconciliation cycle(re-render the component)
   const [restaurant, setRestaurant] = useState([]);
@@ -41,18 +46,16 @@ const Body = () => {
     <div className="food_body">
       <Row xs={12} md={8} className="gap-3 justify-content-between px-3">
         <Col xs={12} md={6} className="pe-md-3 pe-sm-0 ps-0">
-          <form className="d-flex">
-            <input
-              className="form-control"
-              type="search"
-              aria-label="Search"
-              name="search"
-              id="search"
-              placeholder="Search food restaurant"
-              value={searchRes}
-              onChange={(e) => handleSearch(e)}
-            />
-          </form>
+          <input
+            className="form-control"
+            type="search"
+            aria-label="Search"
+            name="search"
+            id="search"
+            placeholder="Search food restaurant"
+            value={searchRes}
+            onChange={(e) => handleSearch(e)}
+          />
         </Col>
         <Col xs={12} md={4} className="text-end pe-0">
           <button

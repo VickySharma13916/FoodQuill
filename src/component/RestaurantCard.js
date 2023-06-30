@@ -20,10 +20,10 @@ const RestaurantCard = ({ restaurantData }) => {
         alt="restaurant"
         className="card-img-top"
       />
-      <div className="card-body card-height" style={{ height: "210px" }}>
+      <div className="card-body card-height">
         <div className="card-title res_title text-truncate">{name}</div>
-        <div className="res_add">{address}</div>
-        <div className="cuisines">{cuisines.join(", ")}</div>
+        <div className="text-truncate">{address}</div>
+        <div className="cuisines text-truncate">{cuisines.join(", ")}</div>
         <div className="resdata">
           <div
             className={`rating ${avgRating > 0 ? "rating-star" : "no-rating"}`}
