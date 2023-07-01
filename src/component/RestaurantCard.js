@@ -13,25 +13,29 @@ const RestaurantCard = ({ restaurantData }) => {
     cuisines,
   } = restaurantData?.data;
   return (
-    <div className="card">
+    <div className="w-80 border rounded-lg shadow-md hover:shadow-lg">
       <img
         src={`${CDN_URL}${cloudinaryImageId}`}
         loading="lazy"
         alt="restaurant"
-        className="card-img-top"
+        className="rounded-t-lg"
       />
-      <div className="card-body card-height">
-        <div className="card-title res_title text-truncate">{name}</div>
-        <div className="text-truncate">{address}</div>
-        <div className="cuisines text-truncate">{cuisines.join(", ")}</div>
-        <div className="resdata">
+      <div className="h-48 p-4">
+        <div className="text-xl mt-2 font-semibold truncate">{name}</div>
+        <div className="truncate">{address}</div>
+        <div className="cuisines truncate">{cuisines.join(", ")}</div>
+        <div className="flex justify-between my-2">
           <div
-            className={`rating ${avgRating > 0 ? "rating-star" : "no-rating"}`}
+            className={`flex items-center text-white ${
+              avgRating > 0
+                ? "bg-green-500 px-2 py-1 rounded"
+                : "px-2 py-1 rounded bg-red-500"
+            }`}
           >
             {avgRating > 0 ? (
               <>
                 {avgRating}
-                <FaStar fill="#ffd401" />
+                <FaStar fill="#ffd401" className="ml-1" />
               </>
             ) : (
               "N/A"
@@ -41,11 +45,9 @@ const RestaurantCard = ({ restaurantData }) => {
             {availability?.opened ? "Restaurant open" : "Restaurant closed"}
           </div>
         </div>
-        <div className="card-text">
-          <div className="resdata">
-            <div className="cost2">₹{costForTwo / 100} for two</div>
-            <div className="res_time">{deliveryTime} minutes Delivery</div>
-          </div>
+        <div className="flex justify-between mt-2">
+          <div className="font-semibold">₹{costForTwo / 100} for two</div>
+          <div className="res_time">{deliveryTime} minutes Delivery</div>
         </div>
       </div>
     </div>

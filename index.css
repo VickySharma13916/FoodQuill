@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Pacifico&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-@import './node_modules/bootstrap/dist/css/bootstrap.min.css';
+/* @import './node_modules/bootstrap/dist/css/bootstrap.min.css'; */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
 
 body {
     margin: 0%;
@@ -19,6 +25,7 @@ body {
 .card {
     box-shadow: 0 0 5px 2px lightgray;
 }
+
 
 .nav_bar_box {
     position: sticky;
@@ -231,4 +238,4 @@ body {
     white-space: pre-wrap;
     line-height: 1.5rem;
     height: 75px;
-}
+} */

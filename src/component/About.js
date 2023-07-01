@@ -40,23 +40,20 @@ import { Col, Container, Row } from "react-bootstrap";
 
 const About = () => {
   return (
-    <Container fluid={true}>
-      <h1 className="mt-3">About</h1>
-      <Row>
-        <Col xs={12} md={6} lg={3} className="mb-3">
-          <UserClass name={"ravi35663"} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
-          <UserClass name={"JAY9039"} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
-          <User name={"Vickysharma13916"} />
-        </Col>
-        <Col xs={12} md={6} lg={3} className="mb-3">
-          <User name={"akshaymarch7"} />
-        </Col>
-      </Row>
-    </Container>
+    <div className="my-4 flex flex-wrap gap-4 p-4">
+      <div className="flex-grow w-64">
+        <UserClass name={"ravi35663"} />
+      </div>
+      <div className="flex-grow w-64">
+        <UserClass name={"JAY9039"} />
+      </div>
+      <div className="flex-grow w-64">
+        <User name={"Vickysharma13916"} />
+      </div>
+      <div className="flex-grow w-64">
+        <User name={"akshaymarch7"} />
+      </div>
+    </div>
   );
 };
 

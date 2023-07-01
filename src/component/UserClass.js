@@ -35,17 +35,21 @@ class UserClass extends React.Component {
       <>
         {userInfo &&
           userInfo?.map((item) => (
-            <div className="card" key={item?.id}>
-              <img src={item?.avatar_url} alt="user" loading="lazy" className="img-fluid" />
-              <div
-                className="card-body card-height"
-                style={{ minHeight: "200px" }}
-              >
-                <h2>{item?.name}</h2>
+            <div className="border rounded p-4" key={item?.id}>
+              <img
+                src={item?.avatar_url}
+                alt="user"
+                loading="lazy"
+                className="rounded"
+              />
+              <div className="h-36">
+                <h2 className="font-semibold text-2xl">{item?.name}</h2>
                 <div>
                   Github Id:-
-                  <a style={{ textDecoration: "none" }} href={item?.html_url}>
-                    {item?.html_url}
+                  <a className="no-underline" href={item?.html_url}>
+                    <span className="text-blue-600 font-medium">
+                      {item?.html_url}
+                    </span>
                   </a>
                 </div>
                 <div>Followers:- {item?.followers}</div>

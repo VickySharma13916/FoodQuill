@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 const Header = () => {
   const [login, setLogin] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false);
   const online = useOnlineStatus();
   //If their is no dependency array in useEffect component called in every rendered
   //If empty dependency array is put it in the useEffect than it called in first or initial render(just once)
@@ -15,58 +16,48 @@ const Header = () => {
   //   console.log("Useeffect called");
   // }, []);
   return (
-    <Navbar expand="lg" className="nav_bar_box">
-      <Container style={{ maxWidth: "100%", padding: "0 1.25rem" }}>
-        <Navbar.Brand>
-          <Link to="/">
-            <img
-              src={logo}
-              loading="lazy"
-              width={60}
-              height={60}
-              className="img-fluid"
-              alt="Brandlogo"
-            />
-          </Link>
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav>
-            {/* <Nav.Link>
-              <div>Online Status :- {online ? "online" : "offline"}</div>
-            </Nav.Link> */}
-            <Nav.Link>
-              <Link to="/">
-                <div>Home</div>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/about">
-                <div>About Us</div>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/contact">
-                <div>Contact Us</div>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/cart">
-                <div>Cart</div>
-              </Link>
-            </Nav.Link>
-            <Nav.Link>
-              <Link to="/grocery">
-                <div>Grocery</div>
-              </Link>
-            </Nav.Link>
-            <div className="login" onClick={() => setLogin(!login)}>
-              {login ? "Login" : "Logout"}
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <div className="header flex flex-wrap justify-between items-center shadow-md px-4 bg-slate-100">
+      <Link to="/" className="flex-shrink-0">
+        <img
+          src={logo}
+          alt="logo"
+          className="logo w-20 brightness-95 cursor-pointer"
+        />
+      </Link>
+      <button
+        className="block sm:hidden px-2 py-1 rounded bg-indigo-600 text-white"
+        onClick={() => setMenuOpen(!menuOpen)}
+      >
+        Menu
+      </button>
+      <div
+        className={`${
+          menuOpen ? "flex flex-col justify-end" : "hidden"
+        } sm:flex sm:items-center sm:justify-center sm:mt-2`}
+      >
+        <Link to="/" className="px-4 cursor-pointer">
+          Home
+        </Link>
+        <Link to="/about" className="px-4 cursor-pointer">
+          About Us
+        </Link>
+        <Link to="/contact" className="px-4 cursor-pointer">
+          Contact Us
+        </Link>
+        <Link to="/cart" className="px-4 cursor-pointer">
+          Cart
+        </Link>
+        <Link to="/grocery" className="px-4 cursor-pointer">
+          Grocery
+        </Link>
+        <div
+          className="flex items-center w-max cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
+          onClick={() => setLogin(!login)}
+        >
+          {login ? "Login" : "Logout"}
+        </div>
+      </div>
+    </div>
   );
 };
 

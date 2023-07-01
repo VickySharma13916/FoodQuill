@@ -43,55 +43,48 @@ const Body = () => {
   );
 
   return (
-    <div className="food_body">
-      <Row xs={12} md={8} className="gap-3 justify-content-between px-3">
-        <Col xs={12} md={6} className="pe-md-3 pe-sm-0 ps-0">
-          <input
-            className="form-control"
-            type="search"
-            aria-label="Search"
-            name="search"
-            id="search"
-            placeholder="Search food restaurant"
-            value={searchRes}
-            onChange={(e) => handleSearch(e)}
-          />
-        </Col>
-        <Col xs={12} md={4} className="text-end pe-0">
-          <button
-            className="btn btn-secondary"
-            onClick={() => {
-              const listOfRestaurant = restaurant.filter(
-                (item) => item.data.avgRating >= 4
-              );
-              setRestaurant(listOfRestaurant);
-            }}
-          >
-            Top Rated Restaurant
-          </button>
-        </Col>
-      </Row>
+    <div className="food_body my-4">
+      <div className="px-4 flex">
+        <input
+          type="text"
+          name="search"
+          id="search"
+          className="w-96 py-2 px-4 border bg-slate-50 rounded-sm"
+          placeholder="Search food restaurant"
+          value={searchRes}
+          onChange={(e) => handleSearch(e)}
+        />
+        <button
+          className="w-max ml-4 flex items-center cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
+          onClick={() => {
+            const listOfRestaurant = restaurant.filter(
+              (item) => item.data.avgRating >= 4
+            );
+            setRestaurant(listOfRestaurant);
+          }}
+        >
+          Top Rated Restaurant
+        </button>
+      </div>
 
       {showRestaurant ? (
         <Shimmer />
       ) : (
-        <Container className="p-0" fluid={true}>
-          <Row xs={1} sm={2} md={3} lg={4}>
-            {filterRestraurant?.map((item) => {
-              return (
-                <Col className="p-3" key={item.data.id}>
-                  <Link
-                    to={`restaurants/${item.data.id}`}
-                    state={{ item: item }}
-                    style={{ textDecoration: "none" }}
-                  >
-                    <RestaurantCard restaurantData={item} />
-                  </Link>
-                </Col>
-              );
-            })}
-          </Row>
-        </Container>
+        <div className="flex flex-wrap gap-4 p-4">
+          {filterRestraurant?.map((item) => {
+            return (
+              <span className="flex-grow w-64" key={item.data.id}>
+                <Link
+                  to={`restaurants/${item.data.id}`}
+                  state={{ item: item }}
+                  className="no-underline"
+                >
+                  <RestaurantCard restaurantData={item} />
+                </Link>
+              </span>
+            );
+          })}
+        </div>
       )}
     </div>
   );

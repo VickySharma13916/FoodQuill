@@ -15,30 +15,29 @@ const RestaurantMenu = () => {
     const { name, imageId, category, description, ratings, inStock, price } =
       restData;
     return (
-      <div className="card">
+      <div className="w-80 border rounded-lg shadow-md hover:shadow-lg">
         {imageId && (
           <img
             src={CDN_URL + imageId}
             loading="lazy"
             alt="restaurant"
-            className="card-img-top"
+            className="rounded-t-lg"
           />
         )}
-        <div className="card-body card-height">
-          <div className="card-title res_title text-truncate">{name}</div>
-
-          <div className="resdata">
+        <div className="h-40 p-4">
+          <div className="truncate text-xl mt-2 font-semibold">{name}</div>
+          <div className="flex justify-between mt-2">
             <div
-              className={`rating ${
+              className={`flex items-center text-white ${
                 ratings?.aggregatedRating?.rating > 0
-                  ? "rating-star"
-                  : "no-rating"
+                  ? "bg-green-500 px-2 py-1 rounded"
+                  : "px-2 py-1 rounded bg-red-500"
               } `}
             >
               {ratings?.aggregatedRating?.rating > 0 ? (
                 <>
                   {ratings?.aggregatedRating?.rating}
-                  <FaStar fill="#ffd401" />
+                  <FaStar fill="#ffd401" className="ml-1" />
                 </>
               ) : (
                 "N/A"
@@ -47,11 +46,13 @@ const RestaurantMenu = () => {
             <div className="available">Stock Available :- {inStock}</div>
           </div>
           <div className="card-text mt-1">
-            <div className="resdata">
-              <div className="category">{category}</div>
-              <div className="res_title">{price && <>₹{price / 100}</>}</div>
+            <div className="flex justify-between mt-2">
+              <div className="truncate">{category}</div>
+              <div className="text-xl font-semibold">
+                {price && <>₹{price / 100}</>}
+              </div>
             </div>
-            <div className="text-truncate">
+            <div className="truncate">
               {description ? description : "Description Menu Item"}
             </div>
           </div>
@@ -62,66 +63,53 @@ const RestaurantMenu = () => {
   return resInfo.restaurantMenu.length <= 0 ? (
     <Shimmer />
   ) : (
-    <Container fluid={true} className="p-3">
-      <Row>
-        <Col
-          xs={12}
-          style={{
-            display: "flex",
-            justifyContent: "space-between",
-            alignItems: "flex-start",
-            flexWrap: "wrap",
-          }}
-        >
-          <Col xs={12} md={6} className="res_img">
-            {cloudinaryImageId && (
-              <img
-                src={CDN_URL + cloudinaryImageId}
-                loading="lazy"
-                alt="restaurant"
-                className="img-fluid rounded"
-              />
-            )}
-          </Col>
-          <Col xs={12} md={6}>
-            <div className="card-body border-0">
-              <div className="card-title res_title">{name}</div>
-              <div className="card-subtitle mb-2 text-muted slugs">
-                <div>Cuisines Available - {cuisines.join(" ")}</div>
+    <div className="p-4">
+      <div className="flex flex-wrap justify-between sm:flex-col md:flex-row items-start">
+        {cloudinaryImageId && (
+          <img
+            src={CDN_URL + cloudinaryImageId}
+            loading="lazy"
+            alt="restaurant"
+            className="img-fluid rounded w-full sm:w-5/12"
+          />
+        )}
+        <div className="w-full sm:w-1/2 md:w-1/2 flex justify-start">
+          <div>
+            <div className="font-semibold text-2xl">{name}</div>
+            <div className="text-xl">
+              Cuisines Available - {cuisines.join(" ")}
+            </div>
+            <div className="card-text my-2">
+              <div className="flex items-center text-xl">
+                <span className="bg-green-500 px-2 py-1 rounded flex items-center text-white">
+                  {avgRating && (
+                    <>
+                      {avgRating} <FaStar fill="#ffd401" className="ml-1" />
+                    </>
+                  )}
+                </span>
+                <span className="ml-4">{totalRatings} Ratings</span>
               </div>
-              <div className="card-text">
-                <div className="avg">
-                  <span className="rating-star">
-                    {avgRating && (
-                      <>
-                        {avgRating} <FaStar fill="#ffd401" className="ms-0" />
-                      </>
-                    )}{" "}
-                  </span>
-                  - {totalRatings} Ratings
-                </div>
-                <div className="mt-2">
-                  Address - {slugs.restaurant}, {slugs.city}
-                </div>
+              <div className="mt-2 text-xl">
+                {slugs.restaurant}, {slugs.city}
               </div>
             </div>
-          </Col>
-        </Col>
-        <Col xs={12} className="menuItems mt-3">
-          <h2> Menu Items </h2>
-          <Container className="p-0" fluid={true}>
-            <Row xs={1} sm={2} md={3} lg={4}>
-              {resInfo.restMenu &&
-                resInfo.restMenu?.map((item) => (
-                  <Col className="p-3" key={item.card.info.id}>
-                    <RestraurantMenuCard restData={item.card.info} />
-                  </Col>
-                ))}
-            </Row>
-          </Container>
-        </Col>
-      </Row>
-    </Container>
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-3">
+        <h2 className="font-semibold text-2xl font-sans"> Menu Items </h2>
+        <div className="flex flex-wrap gap-4 mt-4">
+          {resInfo.restMenu &&
+            resInfo.restMenu?.map((item) => (
+              <div className="flex-grow w-64" key={item.card.info.id}>
+                <RestraurantMenuCard restData={item.card.info} />
+              </div>
+            ))}
+        </div>
+      </div>
+    </div>
   );
 };
 

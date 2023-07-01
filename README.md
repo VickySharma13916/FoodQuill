@@ -69,4 +69,3 @@ import {variable} from "path"
 
 - Client Side Routing {When the html pages comes from frontend side component via routing}
 - Server Side Routing {when the page comes from the server side with network call}
-- 
