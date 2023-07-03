@@ -1,4 +1,5 @@
 import React from "react";
+import UserContext from "../Utils/UserContext";
 class UserClass extends React.Component {
   constructor(props) {
     super(props);
@@ -42,7 +43,7 @@ class UserClass extends React.Component {
                 loading="lazy"
                 className="rounded"
               />
-              <div className="h-36">
+              <div className="h-49">
                 <h2 className="font-semibold text-2xl">{item?.name}</h2>
                 <div>
                   Github Id:-
@@ -55,6 +56,18 @@ class UserClass extends React.Component {
                 <div>Followers:- {item?.followers}</div>
                 <div>Following:- {item?.following}</div>
                 <div>Repositories:- {item?.public_repos}</div>
+                <div>
+                  Local User:-
+                  <UserContext.Consumer>
+                    {(value) => {
+                      return (
+                        <span>
+                          {value.name} -{value.email}
+                        </span>
+                      );
+                    }}
+                  </UserContext.Consumer>
+                </div>
               </div>
             </div>
           ))}

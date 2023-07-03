@@ -8,6 +8,7 @@ import ContactUs from "./component/ContactUs";
 import Cart from "./component/Cart";
 import Error from "./component/Error";
 import RestaurantMenu from "./component/RestaurantMenu";
+import Shimmer from "./component/Shimmer";
 // import About from "./component/About";
 // import Grocery from "./component/Grocery";
 
@@ -44,7 +45,7 @@ const appRoutes = createBrowserRouter([
       {
         path: "/about",
         element: (
-          <Suspense fallback={<h1>Loading....</h1>}>
+          <Suspense fallback={<Shimmer />}>
             <About />
           </Suspense>
         ),
@@ -60,7 +61,7 @@ const appRoutes = createBrowserRouter([
       {
         path: "/grocery",
         element: (
-          <Suspense fallback={<h1>Loading....</h1>}>
+          <Suspense fallback={<Shimmer />}>
             <Grocery />
           </Suspense>
         ),
@@ -74,3 +75,7 @@ const appRoutes = createBrowserRouter([
 ]);
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<RouterProvider router={appRoutes} />);
+
+// Props Drilling
+// Lifting the state up
+// Managing the Data and UI layer

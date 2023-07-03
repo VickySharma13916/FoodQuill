@@ -8,7 +8,7 @@ const Shimmer = () => {
         <div className="flex-grow w-64 border rounded-lg shadow-md" key={i}>
           <div className="h-96 flex flex-col items-center">
             <div className="bg-gray-300 rounded-t-lg w-full h-full"></div>
-            <div className="bg-gray-100 rounded-b-lg w-full h-full p-4"></div>
+            <div className="bg-gray-100 rounded-b-lg w-full h-full"></div>
           </div>
         </div>
       );

@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { CDN_URL } from "../Utils/constant";
 import useRestaurantMenu from "../Utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
-import { Col, Container, Row } from "react-bootstrap";
 import { FaStar } from "react-icons/fa";
 
 const RestaurantMenu = () => {
