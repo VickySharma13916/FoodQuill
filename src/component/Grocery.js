@@ -1,7 +1,10 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { RiArrowDownSLine, RiArrowUpSLine } from "react-icons/ri";
+// import UserContext from "../Utils/UserContext";
 const Grocery = () => {
   const [isVisible, setIsVisible] = useState("");
+  // const user = useContext(UserContext);
+  // console.log(user);
   return (
     <>
       <h1 className="p-4">

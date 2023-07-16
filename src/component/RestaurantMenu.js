@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { CDN_URL } from "../Utils/constant";
 import useRestaurantMenu from "../Utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
 import { FaStar } from "react-icons/fa";
+import RestaurantCategory from "./RestaurantCategory";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
+  const [showItem, setShowItem] = useState(null);
   const { name, avgRating, totalRatings, cloudinaryImageId, cuisines, slugs } =
     resInfo.restaurantMenu;
   const RestraurantMenuCard = ({ restData }) => {
@@ -96,7 +98,19 @@ const RestaurantMenu = () => {
           </div>
         </div>
       </div>
-
+      <div className="my-4">
+        {resInfo?.category.map((category, index) => {
+          return (
+            //Controlled Component
+            <RestaurantCategory
+              category={category.card.card}
+              key={category.card.card.title}
+              isVisible={index === showItem}
+              setShowItem={() => setShowItem(showItem === index ? null : index)}
+            />
+          );
+        })}
+      </div>
       <div className="mt-3">
         <h2 className="font-semibold text-2xl font-sans"> Menu Items </h2>
         <div className="flex flex-wrap gap-4 mt-4">
@@ -113,3 +127,6 @@ const RestaurantMenu = () => {
 };
 
 export default RestaurantMenu;
+
+//Controlled and Uncontrolled Component
+// If it has own state then it has a Uncontrolled Component if the parent has the power to control the children then it is called Controlled Compoent

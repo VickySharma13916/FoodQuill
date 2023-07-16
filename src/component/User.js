@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useContext } from "react";
-// import UserContext from "../Utils/UserContext";
+import UserContext from "../Utils/UserContext";
 const User = ({ name }) => {
   const [userInfo, setUserInfo] = useState(null);
-  // const user = useContext(UserContext);
+  const { user } = useContext(UserContext);
   const fetchUser = async () => {
     const data = await fetch(`https://api.github.com/users/${name}`);
     const json = await data.json();
@@ -35,10 +35,7 @@ const User = ({ name }) => {
               <div>Followers:- {item?.followers}</div>
               <div>Following:- {item?.following}</div>
               <div>Repositories:- {item?.public_repos}</div>
-              <div>
-                Local User:-
-                {/* {user.name} / {user.email} */}
-              </div>
+              <div>Local User:-{user}</div>
             </div>
           </div>
         ))}

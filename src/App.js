@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./component/Header";
 import Body from "./component/Body";
@@ -9,26 +9,33 @@ import Cart from "./component/Cart";
 import Error from "./component/Error";
 import RestaurantMenu from "./component/RestaurantMenu";
 import Shimmer from "./component/Shimmer";
-// import About from "./component/About";
-// import Grocery from "./component/Grocery";
-
+import About from "./component/About";
+import UserContext from "./Utils/UserContext";
 // Code Spliting
 // Chunking
 // Dynamic Bundling
 // Lazy Loading
 // On Demand Loading
-
+// Dynamic Import
 const Grocery = lazy(() => import("./component/Grocery"));
-const About = lazy(() => import("./component/About"));
 
 const App = () => {
+  const [username, setUsername] = useState("");
+  useEffect(() => {
+    const dummyData = {
+      name: "Vicky",
+    };
+    setUsername(dummyData.name);
+  }, []);
   return (
-    <div className="app">
-      <Header />
-      {/* outlet is basically replaced by the children according to the routes. */}
-      <Outlet />
-      <Footer />
-    </div>
+    <UserContext.Provider value={{ user: username, setUsername }}>
+      <div className="app">
+        <Header />
+        {/* outlet is basically replaced by the children according to the routes. */}
+        <Outlet />
+        <Footer />
+      </div>
+    </UserContext.Provider>
   );
 };
 
@@ -44,11 +51,7 @@ const appRoutes = createBrowserRouter([
       },
       {
         path: "/about",
-        element: (
-          <Suspense fallback={<Shimmer />}>
-            <About />
-          </Suspense>
-        ),
+        element: <About />,
       },
       {
         path: "/contact",

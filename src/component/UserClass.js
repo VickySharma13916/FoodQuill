@@ -60,11 +60,7 @@ class UserClass extends React.Component {
                   Local User:-
                   <UserContext.Consumer>
                     {(value) => {
-                      return (
-                        <span>
-                          {value.name} -{value.email}
-                        </span>
-                      );
+                      return <span>{value.user}</span>;
                     }}
                   </UserContext.Consumer>
                 </div>

@@ -8,7 +8,7 @@ const Header = () => {
   const [login, setLogin] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const online = useOnlineStatus();
-  const { name } = useContext(UserContext);
+  const { user } = useContext(UserContext);
   //If their is no dependency array in useEffect component called in every rendered
   //If empty dependency array is put it in the useEffect than it called in first or initial render(just once)
   //If their is some variable or state in depencencies array than it called when state is updated ([login] => it will render when login is update)
@@ -16,7 +16,7 @@ const Header = () => {
   //   console.log("Useeffect called");
   // }, []);
   return (
-    <div className="header sticky top-0 flex flex-wrap justify-between items-center shadow-md px-4 bg-slate-100">
+    <div className="header sticky top-0 z-20 flex flex-wrap justify-between items-center shadow-md px-4 bg-slate-100">
       <Link to="/" className="flex-shrink-0">
         <img
           src={logo}
@@ -51,7 +51,7 @@ const Header = () => {
           Grocery
         </Link>
         <div className="flex flex-col items-center justify-center relative pl-2 pr-6 text-indigo-800 font-bold text-xl">
-          {name}
+          {user}
           {online ? (
             <span className="w-4 h-4 absolute top-0 right-3 border rounded-full bg-green-600"></span>
           ) : (

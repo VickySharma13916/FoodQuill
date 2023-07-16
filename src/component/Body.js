@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from "react";
-import RestaurantCard from "./RestaurantCard";
+import React, { useContext, useEffect, useState } from "react";
+import RestaurantCard, { withPromotedLabel } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-import { Col, Container, Row } from "react-bootstrap";
 import useOnlineStatus from "../Utils/useOnlineStatus";
+import UserContext from "../Utils/UserContext";
 
 const Body = () => {
   const online = useOnlineStatus();
   if (!online) {
     return <h1>You are Online, Please check your internet connection</h1>;
   }
+  const { user, setUsername } = useContext(UserContext);
   // Local State Variable - super powerful variable
   // Whenever a state variable is updated, react trigger a reconciliation cycle(re-render the component)
   const [restaurant, setRestaurant] = useState([]);
   const [showRestaurant, setShowRestaurant] = useState(true);
   const [searchRes, setSearchRes] = useState("");
+  const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const fetchData = async () => {
     const data = await fetch(
       "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
@@ -41,7 +43,6 @@ const Body = () => {
   const filterRestraurant = restaurant?.filter((item) =>
     item?.data?.name?.toLowerCase().includes(searchRes?.toLowerCase())
   );
-
   return (
     <div className="food_body my-4">
       <div className="px-4 flex">
@@ -65,6 +66,17 @@ const Body = () => {
         >
           Top Rated Restaurant
         </button>
+        {/* <label htmlFor="userName" className="mt-2 ml-2">
+          Username
+        </label>
+        <input
+          type="text"
+          name="userName"
+          id="userName"
+          value={user}
+          onChange={(e) => setUsername(e.target.value)}
+          className="border-2 ml-2 rounded border-blue-700 text-cyan-500 p-2"
+        /> */}
       </div>
 
       {showRestaurant ? (
@@ -79,7 +91,11 @@ const Body = () => {
                   state={{ item: item }}
                   className="no-underline"
                 >
-                  <RestaurantCard restaurantData={item} />
+                  {item.data.promoted ? (
+                    <RestaurantCardPromoted restaurantData={item} />
+                  ) : (
+                    <RestaurantCard restaurantData={item} />
+                  )}
                 </Link>
               </span>
             );
