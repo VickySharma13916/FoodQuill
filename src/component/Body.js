@@ -19,18 +19,15 @@ const Body = () => {
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const fetchData = async () => {
     const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.1702401&lng=72.83106070000001&page_type=DESKTOP_WEB_LISTING"
+      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
     const json = await data.json();
     //optional chaining
     setRestaurant(
-      json?.data?.cards[2]
-        ? json?.data?.cards[2]?.data?.data?.cards
-        : json?.data?.cards[0]?.data?.data?.cards
+      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
     );
     setShowRestaurant(false);
   };
-
   useEffect(() => {
     //when the body component is render is completed than the useEffect callback function is called
     fetchData();
@@ -39,9 +36,8 @@ const Body = () => {
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
-
   const filterRestraurant = restaurant?.filter((item) =>
-    item?.data?.name?.toLowerCase().includes(searchRes?.toLowerCase())
+    item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
   );
   return (
     <div className="food_body my-4">
@@ -85,13 +81,13 @@ const Body = () => {
         <div className="flex flex-wrap gap-4 p-4">
           {filterRestraurant?.map((item) => {
             return (
-              <span className="flex-grow w-64" key={item.data.id}>
+              <span className="flex-grow w-64" key={item?.info?.id}>
                 <Link
-                  to={`restaurants/${item.data.id}`}
+                  to={`restaurants/${item?.info?.id}`}
                   state={{ item: item }}
                   className="no-underline"
                 >
-                  {item.data.promoted ? (
+                  {item?.info?.promoted ? (
                     <RestaurantCardPromoted restaurantData={item} />
                   ) : (
                     <RestaurantCard restaurantData={item} />

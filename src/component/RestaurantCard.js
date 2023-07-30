@@ -11,7 +11,7 @@ const RestaurantCard = ({ restaurantData }) => {
     availability,
     costForTwo,
     cuisines,
-  } = restaurantData?.data;
+  } = restaurantData?.info;
   return (
     <div className="w-80 border rounded-lg shadow-md hover:shadow-lg">
       <img
