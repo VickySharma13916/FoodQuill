@@ -69,3 +69,11 @@ import {variable} from "path"
 
 - Client Side Routing {When the html pages comes from frontend side component via routing}
 - Server Side Routing {when the page comes from the server side with network call}
+
+# Redux Toolkit
+    -Install @reduxjs/toolkit and react-redux
+    -Build our store
+    -Connect our store to our app
+    -slice (cartSlice)
+    -Dispatch(action)
+    -Selector

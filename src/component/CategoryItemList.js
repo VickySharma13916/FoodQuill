@@ -1,7 +1,13 @@
 import React from "react";
 import { CDN_URL } from "../Utils/constant";
+import { useDispatch } from "react-redux/es/hooks/useDispatch";
+import { addItem } from "../Utils/cartSlice";
 
 const CategoryItemList = ({ item }) => {
+  const dispatch = useDispatch();
+  const handleAddItem = (item) => {
+    dispatch(addItem(item));
+  };
   return (
     <div>
       {item?.map((data) => {
@@ -31,7 +37,10 @@ const CategoryItemList = ({ item }) => {
                 />
               )}
               <div className="absolute bottom-2 right-2">
-                <button className="px-2 py-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500">
+                <button
+                  className="px-2 py-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500"
+                  onClick={() => handleAddItem(itemData)}
+                >
                   Add +
                 </button>
               </div>

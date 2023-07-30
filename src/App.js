@@ -11,6 +11,8 @@ import RestaurantMenu from "./component/RestaurantMenu";
 import Shimmer from "./component/Shimmer";
 import About from "./component/About";
 import UserContext from "./Utils/UserContext";
+import { Provider } from "react-redux";
+import appStore from "./Utils/appStore";
 // Code Spliting
 // Chunking
 // Dynamic Bundling
@@ -28,14 +30,16 @@ const App = () => {
     setUsername(dummyData.name);
   }, []);
   return (
-    <UserContext.Provider value={{ user: username, setUsername }}>
-      <div className="app">
-        <Header />
-        {/* outlet is basically replaced by the children according to the routes. */}
-        <Outlet />
-        <Footer />
-      </div>
-    </UserContext.Provider>
+    <Provider store={appStore}>
+      <UserContext.Provider value={{ user: username, setUsername }}>
+        <div className="app">
+          <Header />
+          {/* outlet is basically replaced by the children according to the routes. */}
+          <Outlet />
+          <Footer />
+        </div>
+      </UserContext.Provider>
+    </Provider>
   );
 };
 

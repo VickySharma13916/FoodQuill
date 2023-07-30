@@ -3,12 +3,16 @@ import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 import logo from "../images/logo.png";
 import UserContext from "../Utils/UserContext";
+import { TfiShoppingCartFull } from "react-icons/tfi";
+import { useSelector } from "react-redux";
 
 const Header = () => {
   const [login, setLogin] = useState(true);
   const [menuOpen, setMenuOpen] = useState(false);
   const online = useOnlineStatus();
   const { user } = useContext(UserContext);
+  const cart = useSelector((store) => store.cart.item);
+  console.log(cart);
   //If their is no dependency array in useEffect component called in every rendered
   //If empty dependency array is put it in the useEffect than it called in first or initial render(just once)
   //If their is some variable or state in depencencies array than it called when state is updated ([login] => it will render when login is update)
@@ -44,8 +48,13 @@ const Header = () => {
         <Link to="/contact" className="px-2 cursor-pointer">
           Contact Us
         </Link>
-        <Link to="/cart" className="px-2 cursor-pointer">
-          Cart
+        <Link to="/cart" className="px-2 cursor-pointer relative">
+          <div className="flex">
+            <TfiShoppingCartFull size={20} />
+            <div className="border rounded-full bg-red-600 absolute -top-4 -right-1 text-center text-sm w-6 h-6 text-white">
+              {cart.length}
+            </div>
+          </div>
         </Link>
         <Link to="/grocery" className="px-2 cursor-pointer">
           Grocery
