@@ -32,7 +32,7 @@ const Body = () => {
     //when the body component is render is completed than the useEffect callback function is called
     fetchData();
   }, []);
-
+  console.log(restaurant);
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
@@ -78,10 +78,13 @@ const Body = () => {
       {showRestaurant ? (
         <Shimmer />
       ) : (
-        <div className="flex flex-wrap gap-4 p-4">
+        <div className="flex flex-wrap p-4">
           {filterRestraurant?.map((item) => {
             return (
-              <span className="flex-grow w-64" key={item?.info?.id}>
+              <span
+                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 my-2"
+                key={item?.info?.id}
+              >
                 <Link
                   to={`restaurants/${item?.info?.id}`}
                   state={{ item: item }}

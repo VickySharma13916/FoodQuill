@@ -25,7 +25,7 @@ const RestaurantMenu = () => {
             className="rounded-t-lg"
           />
         )}
-        <div className="h-40 p-4">
+        <div className="h-52 p-4">
           <div className="truncate text-xl mt-2 font-semibold">{name}</div>
           <div className="flex justify-between mt-2">
             <div
@@ -53,7 +53,7 @@ const RestaurantMenu = () => {
                 {price && <>₹{price / 100}</>}
               </div>
             </div>
-            <div className="truncate">
+            <div className=" line-clamp-3">
               {description ? description : "Description Menu Item"}
             </div>
           </div>
