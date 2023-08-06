@@ -1,11 +1,14 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CDN_URL } from "../Utils/constant";
-import { clearCart } from "../Utils/cartSlice";
+import { clearCart, removeItem } from "../Utils/cartSlice";
 
 const Cart = () => {
   const cartItem = useSelector((store) => store.cart.item);
   const dispatch = useDispatch();
+  const handleRemomveItem = (data) => {
+    dispatch(removeItem(data));
+  };
   return (
     <div className="my-8 p-8 w-2/3 border border-slate-100 bg-slate-100 rounded-lg mx-auto">
       <div
@@ -47,6 +50,14 @@ const Cart = () => {
                   alt="food-item"
                 />
               )}
+              <div className="absolute bottom-2 right-2">
+                <button
+                  className="px-2 py-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500"
+                  onClick={() => handleRemomveItem(data)}
+                >
+                  Remove
+                </button>
+              </div>
             </div>
           </div>
         );
