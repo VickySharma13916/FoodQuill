@@ -4,6 +4,7 @@ import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
 import UserContext from "../Utils/UserContext";
+import mockdata from "../mockData/mockdata.json";
 
 const Body = () => {
   const online = useOnlineStatus();
@@ -21,10 +22,20 @@ const Body = () => {
     const data = await fetch(
       "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
+    // const result = await fetch(
+    //   "https://corsproxy.io/?https://www.swiggy.com/mapi/homepage/getCards?lat=28.7040592&lng=77.10249019999999"
+    // );
+    // const resultJson = await result.json();
+    // console.log(resultJson);
     const json = await data.json();
     //optional chaining
     setRestaurant(
       json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+      // .length > 0
+      // ? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+      //     ?.restaurants
+      // : resultJson?.data?.success?.cards[4]?.gridWidget?.gridElements
+      //     ?.infoWithStyle?.restaurants
     );
     setShowRestaurant(false);
   };
@@ -36,9 +47,12 @@ const Body = () => {
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
-  const filterRestraurant = restaurant?.filter((item) =>
-    item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
-  );
+  const filterRestraurant =
+    restaurant?.length > 0
+      ? restaurant
+      : mockdata?.filter((item) =>
+          item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
+        );
   return (
     <div className="food_body my-4">
       <div className="px-4 flex">
@@ -62,27 +76,16 @@ const Body = () => {
         >
           Top Rated Restaurant
         </button>
-        {/* <label htmlFor="userName" className="mt-2 ml-2">
-          Username
-        </label>
-        <input
-          type="text"
-          name="userName"
-          id="userName"
-          value={user}
-          onChange={(e) => setUsername(e.target.value)}
-          className="border-2 ml-2 rounded border-blue-700 text-cyan-500 p-2"
-        /> */}
       </div>
 
       {showRestaurant ? (
         <Shimmer />
       ) : (
-        <div className="flex flex-wrap p-4">
+        <div className="flex gap-4 flex-wrap p-4">         
           {filterRestraurant?.map((item) => {
             return (
               <span
-                className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 my-2"
+                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 my-2"
                 key={item?.info?.id}
               >
                 <Link

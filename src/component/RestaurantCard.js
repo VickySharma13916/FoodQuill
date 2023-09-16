@@ -13,7 +13,7 @@ const RestaurantCard = ({ restaurantData }) => {
     cuisines,
   } = restaurantData?.info;
   return (
-    <div className="w-80 border rounded-lg shadow-md hover:shadow-lg">
+    <div className="border rounded-lg shadow-md hover:shadow-lg">
       <img
         src={`${CDN_URL}${cloudinaryImageId}`}
         loading="lazy"

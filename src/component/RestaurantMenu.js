@@ -9,6 +9,7 @@ import RestaurantCategory from "./RestaurantCategory";
 const RestaurantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
+  console.log(resInfo);
   const [showItem, setShowItem] = useState(null);
   const { name, avgRating, totalRatings, cloudinaryImageId, cuisines, slugs } =
     resInfo.restaurantMenu;
@@ -116,7 +117,10 @@ const RestaurantMenu = () => {
         <div className="flex flex-wrap gap-4 mt-4">
           {resInfo.restMenu &&
             resInfo.restMenu?.map((item) => (
-              <div className="flex-grow w-64" key={item.card.info.id}>
+              <div
+                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4"
+                key={item.card.info.id}
+              >
                 <RestraurantMenuCard restData={item.card.info} />
               </div>
             ))}

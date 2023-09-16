@@ -14,12 +14,13 @@ const useRestaurantMenu = (resId) => {
           ?.card?.itemCards
       : json?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards[1]?.card
           ?.card?.itemCards;
-    const filterCategory =
-      json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
-        (item) =>
-          item?.card?.card?.["@type"] ===
-          "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
-      );
+    const filterCategory = json?.data?.cards[3]?.groupedCard
+      ? json?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+      : json?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
+          (item) =>
+            item?.card?.card?.["@type"] ===
+            "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
+        );
     setRestaurantMenu(resJson);
     setRestMenu(resMenuJson);
     setCategory(filterCategory);

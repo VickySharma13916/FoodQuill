@@ -1,0 +1,2084 @@
+[
+    {
+        "info": {
+            "id": "169626",
+            "name": "Maheshwari chat bhandar",
+            "cloudinaryImageId": "k3psiqkad09p4jodl75q",
+            "locality": "Harsh Vihar",
+            "areaName": "Pitampura",
+            "costForTwo": "₹100 for two",
+            "cuisines": [
+                "Chinese"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "169626",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4900
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4900
+            },
+            "parentId": "313581",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "100+",
+            "promoted": true,
+            "adTrackingId": "cid=8350279~p=1~eid=0000018a-9dc6-b7d9-123a-be0400580141~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 4.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "4.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 22:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=169626",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "498382",
+            "name": "Burger King",
+            "cloudinaryImageId": "e33e1d3ba7d6b2bb0d45e1001b731fcf",
+            "locality": "M2K Mall",
+            "areaName": "Rohini",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Burgers",
+                "American"
+            ],
+            "avgRating": 4.4,
+            "feeDetails": {
+                "restaurantId": "498382",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "166",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "32 mins",
+                "lastMileTravelString": "2.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 03:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=498382",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "27025",
+            "name": "KFC",
+            "cloudinaryImageId": "56c9ab92bd79745fd152a30fa2525426",
+            "locality": "Unity One Mall",
+            "areaName": "Rohini",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Burgers",
+                "Biryani",
+                "American",
+                "Snacks",
+                "Fast Food"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "27025",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4200
+            },
+            "parentId": "547",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 2.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "2.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=27025",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "435806",
+            "name": "Kwality Walls Frozen Dessert and Ice Cream Shop",
+            "cloudinaryImageId": "mpsipblyz91f3gcz2r21",
+            "locality": "Saraswati Vihar",
+            "areaName": "Pitampura",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Desserts",
+                "Ice Cream",
+                "Ice Cream Cakes"
+            ],
+            "avgRating": 4.5,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "435806",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4900
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4900
+            },
+            "parentId": "582",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "500+",
+            "promoted": true,
+            "adTrackingId": "cid=8383157~p=2~eid=0000018a-9dc6-b7d9-123a-be050058021e~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 4.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "4.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 02:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=435806",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "622616",
+            "name": "Domino's Pizza",
+            "cloudinaryImageId": "hsb5yt3qhechxockrbut",
+            "locality": "3rd Sector",
+            "areaName": "Rohini",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Pizzas",
+                "Italian",
+                "Pastas",
+                "Desserts"
+            ],
+            "avgRating": 4.4,
+            "feeDetails": {
+                "restaurantId": "622616",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "2456",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "100+",
+            "sla": {
+                "deliveryTime": 25,
+                "serviceability": "SERVICEABLE",
+                "slaString": "25 mins",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 00:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹100 OFF",
+                "subHeader": "ABOVE ₹999",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=622616",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "341033",
+            "name": "Bakingo",
+            "cloudinaryImageId": "rmnzl74nmlldrsv9bnvk",
+            "locality": "Rithala",
+            "areaName": "Rohini",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts",
+                "Beverages",
+                "Snacks"
+            ],
+            "avgRating": 4.3,
+            "feeDetails": {
+                "restaurantId": "341033",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4300
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4300
+            },
+            "parentId": "3818",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=341033",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "288882",
+            "name": "Noodles Affair Fusion Chinese",
+            "cloudinaryImageId": "fzzsdj2d0rh0xlxf9n8m",
+            "locality": "Sector 7",
+            "areaName": "Rohini",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Chinese",
+                "Fast Food"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "288882",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4300
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4300
+            },
+            "parentId": "313830",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "100+",
+            "promoted": true,
+            "adTrackingId": "cid=8247357~p=3~eid=0000018a-9dc6-b7d9-123a-be060058031d~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "32 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "imageBased": {},
+                    "textExtendedBadges": {},
+                    "textBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=288882",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "614570",
+            "name": "Subway",
+            "cloudinaryImageId": "1ace5fa65eff3e1223feb696c956b38b",
+            "locality": "Sector 10",
+            "areaName": "Rohini",
+            "costForTwo": "₹350 for two",
+            "cuisines": [
+                "Salads",
+                "Snacks",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 3.7,
+            "feeDetails": {
+                "restaurantId": "614570",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "2",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "500+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "2.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 01:00:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "fontColor": "#7E808C",
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "description": "",
+                                    "shortDescription": "options available"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=614570",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "225317",
+            "name": "La Pino'z Pizza",
+            "cloudinaryImageId": "aizb6uyem2jb1hcrhxac",
+            "locality": "Rohini",
+            "areaName": "New Friends Colony",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "Pizzas",
+                "Pastas",
+                "Italian",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "225317",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4300
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4300
+            },
+            "parentId": "4961",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "10K+",
+            "sla": {
+                "deliveryTime": 35,
+                "lastMileTravel": 3.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "35 mins",
+                "lastMileTravelString": "3.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 05:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=225317",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "256285",
+            "name": "Jai Mata Di Annapurna Rasoi",
+            "cloudinaryImageId": "ftjnehico84kl0aocdv7",
+            "locality": "Sector 6",
+            "areaName": "Rohini",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Indian"
+            ],
+            "avgRating": 4.1,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "256285",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "108627",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "100+",
+            "promoted": true,
+            "adTrackingId": "cid=8247274~p=5~eid=0000018a-9dc6-b7d9-123a-be0800580519~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 33,
+                "lastMileTravel": 1.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "33 mins",
+                "lastMileTravelString": "1.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=256285",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "378107",
+            "name": "Gaurav Pastry Palace",
+            "cloudinaryImageId": "tdp6ryzdqdi8cifuvty3",
+            "locality": "7Th Sector",
+            "areaName": "Rohini",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Desserts",
+                "Bakery"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "378107",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "86613",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 1.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "26 mins",
+                "lastMileTravelString": "1.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 21:29:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=378107",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "27057",
+            "name": "Ane China Rohini",
+            "cloudinaryImageId": "ckjgl6sqwnlyr0hgwycw",
+            "locality": "Sector 9",
+            "areaName": "Rohini",
+            "costForTwo": "₹320 for two",
+            "cuisines": [
+                "Chinese",
+                "Tibetan",
+                "Snacks",
+                "Nepalese"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "27057",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4300
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4300
+            },
+            "parentId": "16123",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "32 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 22:30:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "select": true,
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "description": "",
+                                    "shortDescription": "options available",
+                                    "fontColor": "#7E808C"
+                                }
+                            }
+                        ]
+                    },
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=27057",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "315043",
+            "name": "Smarty Chick Fest",
+            "cloudinaryImageId": "mzeowahoxtya885oaiyg",
+            "locality": "Sector 6",
+            "areaName": "Rohini",
+            "costForTwo": "₹250 for two",
+            "cuisines": [
+                "Chinese",
+                "Indian"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "315043",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "189663",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "50+",
+            "promoted": true,
+            "adTrackingId": "cid=8032983~p=7~eid=0000018a-9dc6-b7d9-123a-be0a00580700~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 0.9,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "0.9 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 22:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=315043",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "763255",
+            "name": "Samosa Party",
+            "cloudinaryImageId": "d8d4e708a41f011361c949d44990d5e0",
+            "locality": "Rohini",
+            "areaName": "Rohini",
+            "costForTwo": "₹150 for two",
+            "cuisines": [
+                "Fast Food",
+                "Snacks",
+                "Beverages",
+                "Chaat",
+                "North Indian",
+                "Street Food",
+                "Sweets",
+                "Desserts",
+                "Punjabi",
+                "Bakery"
+            ],
+            "avgRating": 4.9,
+            "feeDetails": {
+                "restaurantId": "763255",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "6364",
+            "avgRatingString": "4.9",
+            "totalRatingsString": "20+",
+            "sla": {
+                "deliveryTime": 29,
+                "lastMileTravel": 2.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "29 mins",
+                "lastMileTravelString": "2.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "60% OFF",
+                "subHeader": "UPTO ₹120"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=763255",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "38358",
+            "name": "Mr. Crust Bakers",
+            "cloudinaryImageId": "hhvxb3tfkb6j3ujigxyp",
+            "locality": "Rohini, Sector - 7",
+            "areaName": "Sector 7 Rohini",
+            "costForTwo": "₹400 for two",
+            "cuisines": [
+                "Desserts",
+                "Bakery",
+                "Sweets"
+            ],
+            "avgRating": 4.1,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "38358",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4300
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4300
+            },
+            "parentId": "13682",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 3,
+                "serviceability": "SERVICEABLE",
+                "slaString": "31 mins",
+                "lastMileTravelString": "3.0 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:50:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=38358",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "14413",
+            "name": "Keventers - Milkshakes & Desserts",
+            "cloudinaryImageId": "f0e94c984813053f46c214f18ce73d59",
+            "locality": "10th Sector",
+            "areaName": "Rohini",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Beverages",
+                "Ice Cream",
+                "Desserts",
+                "Healthy Food"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "14413",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "268997",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "5K+",
+            "promoted": true,
+            "adTrackingId": "cid=8038214~p=8~eid=0000018a-9dc6-b7d9-123a-be0b00580836~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 26,
+                "lastMileTravel": 2.1,
+                "serviceability": "SERVICEABLE",
+                "slaString": "26 mins",
+                "lastMileTravelString": "2.1 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 02:00:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "description": "",
+                                    "shortDescription": "options available",
+                                    "fontColor": "#7E808C",
+                                    "iconId": "guiltfree/GF_Logo_android_3x"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "40% OFF",
+                "subHeader": "UPTO ₹80"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=14413",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "444780",
+            "name": "Theobroma",
+            "cloudinaryImageId": "b033728dcb0101ceb19bff0e1e1f6474",
+            "locality": "Sector 3",
+            "areaName": "Rohini",
+            "costForTwo": "₹850 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts"
+            ],
+            "avgRating": 4.5,
+            "feeDetails": {
+                "restaurantId": "444780",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 4200
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 4200
+            },
+            "parentId": "1040",
+            "avgRatingString": "4.5",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 2.2,
+                "serviceability": "SERVICEABLE",
+                "slaString": "27 mins",
+                "lastMileTravelString": "2.2 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {
+                "imageBadges": [
+                    {
+                        "imageId": "newg.png",
+                        "description": "Gourmet"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "imageId": "newg.png",
+                                    "description": "Gourmet"
+                                }
+                            }
+                        ]
+                    },
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "ABOVE ₹159",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=444780",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "36900",
+            "name": "Wah Bhai Wah",
+            "cloudinaryImageId": "ach30rz8ebyckifblioq",
+            "locality": "Sector 4",
+            "areaName": "Rohini",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "North Indian",
+                "Chinese",
+                "Tandoor",
+                "Beverages"
+            ],
+            "avgRating": 3.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "36900",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "14882",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "5K+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 0.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "32 mins",
+                "lastMileTravelString": "0.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:30:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=36900",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "225792",
+            "name": "Cake Studio-100% Veg",
+            "cloudinaryImageId": "206068b31aab7c1b78fa24e2745d153d",
+            "locality": "Sector 1",
+            "areaName": "Rohini",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts"
+            ],
+            "avgRating": 3.7,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "225792",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "15057",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "1K+",
+            "promoted": true,
+            "adTrackingId": "cid=8368303~p=9~eid=0000018a-9dc6-b7d9-123a-be0c00580911~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 0.8,
+                "serviceability": "SERVICEABLE",
+                "slaString": "27 mins",
+                "lastMileTravelString": "0.8 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=225792",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "433983",
+            "name": "Kings Kulfi",
+            "cloudinaryImageId": "rwqc1kwuozkybvk579vx",
+            "locality": "Sector 7",
+            "areaName": "Sector 7 ",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "433983",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "3672",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "100+",
+            "sla": {
+                "deliveryTime": 28,
+                "lastMileTravel": 2.6,
+                "serviceability": "SERVICEABLE",
+                "slaString": "28 mins",
+                "lastMileTravelString": "2.6 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 01:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "aggregatedDiscountInfoV2": {},
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textExtendedBadges": {},
+                    "textBased": {},
+                    "imageBased": {}
+                }
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=433983",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "316673",
+            "name": "Shubham Soup Wala",
+            "cloudinaryImageId": "n4pbw3scgf5zbinfkmd3",
+            "locality": "Sector 2",
+            "areaName": "Rohini",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Street Food",
+                "North Indian"
+            ],
+            "avgRating": 4.1,
+            "feeDetails": {
+                "restaurantId": "316673",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "453831",
+            "avgRatingString": "4.1",
+            "totalRatingsString": "100+",
+            "promoted": true,
+            "adTrackingId": "cid=8338078~p=10~eid=0000018a-9dc6-b7d9-123a-be0d00580a76~srvts=1694864160729~45826",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 0.4,
+                "serviceability": "SERVICEABLE",
+                "slaString": "27 mins",
+                "lastMileTravelString": "0.4 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "10% OFF",
+                "subHeader": "UPTO ₹40"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=316673",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "682631",
+            "name": "Cake'O'Clocks",
+            "cloudinaryImageId": "23efdc4ed72ca12167d671583b84a7d6",
+            "locality": "Sector-6",
+            "areaName": "Rohini",
+            "costForTwo": "₹300 for two",
+            "cuisines": [
+                "Bakery",
+                "Desserts"
+            ],
+            "avgRating": 3.7,
+            "feeDetails": {
+                "restaurantId": "682631",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "55230",
+            "avgRatingString": "3.7",
+            "totalRatingsString": "50+",
+            "sla": {
+                "deliveryTime": 32,
+                "lastMileTravel": 1.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "32 mins",
+                "lastMileTravelString": "1.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹199",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=682631",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "258189",
+            "name": "Great Indian Khichdi by EatFit",
+            "cloudinaryImageId": "6e44fd7f1e5cd9967edfe47c10247671",
+            "locality": "Village Naharpur",
+            "areaName": "Pushpanjali",
+            "costForTwo": "₹200 for two",
+            "cuisines": [
+                "Home Food",
+                "Indian",
+                "North Indian",
+                "Healthy Food",
+                "Snacks",
+                "Desserts",
+                "Rajasthani",
+                "South Indian",
+                "Maharashtrian",
+                "Sweets"
+            ],
+            "avgRating": 4.3,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "258189",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "319582",
+            "avgRatingString": "4.3",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 30,
+                "lastMileTravel": 1.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "30 mins",
+                "lastMileTravelString": "1.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:59:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "50% OFF",
+                "subHeader": "UPTO ₹100"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=258189",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "355344",
+            "name": "Grameen Kulfi",
+            "cloudinaryImageId": "bdav4siaddormnwayhkx",
+            "locality": "7Th Sector",
+            "areaName": "Rohini",
+            "costForTwo": "₹120 for two",
+            "cuisines": [
+                "Ice Cream",
+                "Desserts"
+            ],
+            "avgRating": 4.4,
+            "veg": true,
+            "feeDetails": {
+                "restaurantId": "355344",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "12175",
+            "avgRatingString": "4.4",
+            "totalRatingsString": "500+",
+            "sla": {
+                "deliveryTime": 27,
+                "lastMileTravel": 1.5,
+                "serviceability": "SERVICEABLE",
+                "slaString": "27 mins",
+                "lastMileTravelString": "1.5 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-17 00:00:00",
+                "opened": true
+            },
+            "badges": {},
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {}
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "20% OFF",
+                "subHeader": "UPTO ₹50"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=355344",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    },
+    {
+        "info": {
+            "id": "279863",
+            "name": "Ghar ka Khana by EatFit",
+            "cloudinaryImageId": "5307ca1693edf67f1df30b2ec699fc88",
+            "locality": "Naharpur",
+            "areaName": "Rohini",
+            "costForTwo": "₹160 for two",
+            "cuisines": [
+                "North Indian",
+                "Home Food",
+                "Healthy Food",
+                "Indian",
+                "Punjabi",
+                "South Indian",
+                "Rajasthani",
+                "Maharashtrian",
+                "Snacks",
+                "Desserts",
+                "Beverages"
+            ],
+            "avgRating": 4,
+            "feeDetails": {
+                "restaurantId": "279863",
+                "fees": [
+                    {
+                        "name": "BASE_DISTANCE",
+                        "fee": 3700
+                    },
+                    {
+                        "name": "BASE_TIME"
+                    },
+                    {
+                        "name": "ANCILLARY_SURGE_FEE"
+                    }
+                ],
+                "totalFee": 3700
+            },
+            "parentId": "422576",
+            "avgRatingString": "4.0",
+            "totalRatingsString": "1K+",
+            "sla": {
+                "deliveryTime": 31,
+                "lastMileTravel": 1.7,
+                "serviceability": "SERVICEABLE",
+                "slaString": "31 mins",
+                "lastMileTravelString": "1.7 km",
+                "iconType": "ICON_TYPE_EMPTY"
+            },
+            "availability": {
+                "nextCloseTime": "2023-09-16 23:59:00",
+                "opened": true
+            },
+            "badges": {
+                "textExtendedBadges": [
+                    {
+                        "iconId": "guiltfree/GF_Logo_android_3x",
+                        "shortDescription": "options available",
+                        "fontColor": "#7E808C"
+                    }
+                ]
+            },
+            "isOpen": true,
+            "type": "F",
+            "badgesV2": {
+                "entityBadges": {
+                    "textBased": {},
+                    "imageBased": {},
+                    "textExtendedBadges": {
+                        "badgeObject": [
+                            {
+                                "attributes": {
+                                    "iconId": "guiltfree/GF_Logo_android_3x",
+                                    "description": "",
+                                    "shortDescription": "options available",
+                                    "fontColor": "#7E808C"
+                                }
+                            }
+                        ]
+                    }
+                }
+            },
+            "aggregatedDiscountInfoV3": {
+                "header": "₹125 OFF",
+                "subHeader": "ABOVE ₹249",
+                "discountTag": "FLAT DEAL"
+            },
+            "differentiatedUi": {
+                "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+                "differentiatedUiMediaDetails": {
+                    "mediaType": "ADS_MEDIA_ENUM_IMAGE",
+                    "lottie": {},
+                    "video": {}
+                }
+            },
+            "reviewsSummary": {},
+            "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+            "restaurantOfferPresentationInfo": {}
+        },
+        "analytics": {},
+        "cta": {
+            "link": "swiggy://menu?restaurant_id=279863",
+            "text": "RESTAURANT_MENU",
+            "type": "DEEPLINK"
+        }
+    }
+]
