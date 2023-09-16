@@ -19,7 +19,6 @@ const cartSlice = createSlice({
       return { ...state, item: updateItem };
     },
     clearCart: (state) => {
-      console.log(current(state));
       // state = ['vicky'] It is basically change or add the reference the of state but not mutating the state.
       //RTK = Either Mutate the existing state or return a new state
       state.item.length = 0; // State = []

@@ -43,7 +43,6 @@ const Body = () => {
     //when the body component is render is completed than the useEffect callback function is called
     fetchData();
   }, []);
-  console.log(restaurant);
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
@@ -53,8 +52,6 @@ const Body = () => {
       : mockdata?.filter((item) =>
           item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
         );
-
-  console.log(restaurant, "resturant");
   return (
     <div className="food_body my-4">
       <div className="px-4 flex gap-4 md:flex-row flex-col">

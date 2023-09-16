@@ -9,7 +9,6 @@ import RestaurantCategory from "./RestaurantCategory";
 const RestaurantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
-  console.log(resInfo);
   const [showItem, setShowItem] = useState(null);
   const { name, avgRating, totalRatings, cloudinaryImageId, cuisines, slugs } =
     resInfo.restaurantMenu;

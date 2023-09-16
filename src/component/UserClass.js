@@ -21,12 +21,12 @@ class UserClass extends React.Component {
 
   // when component is update successfully
   componentDidUpdate() {
-    console.log("component did update");
+    // console.log("component did update");
   }
 
   // when component is unmounted successfully
   componentWillUnmount() {
-    console.log("component will unmount");
+    // console.log("component will unmount");
   }
 
   render() {

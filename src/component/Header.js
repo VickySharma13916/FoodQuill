@@ -12,7 +12,6 @@ const Header = () => {
   const online = useOnlineStatus();
   const { user } = useContext(UserContext);
   const cart = useSelector((store) => store.cart.item);
-  console.log(cart);
   //If their is no dependency array in useEffect component called in every rendered
   //If empty dependency array is put it in the useEffect than it called in first or initial render(just once)
   //If their is some variable or state in depencencies array than it called when state is updated ([login] => it will render when login is update)
