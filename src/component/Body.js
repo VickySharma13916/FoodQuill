@@ -55,18 +55,18 @@ const Body = () => {
         );
   return (
     <div className="food_body my-4">
-      <div className="px-4 flex">
+      <div className="px-4 flex gap-4 md:flex-row flex-col">
         <input
           type="text"
           name="search"
           id="search"
-          className="w-96 py-2 px-4 border bg-slate-50 rounded-sm"
+          className="w-full md:w-96 py-2 px-4 border bg-slate-50 rounded-sm"
           placeholder="Search food restaurant"
           value={searchRes}
           onChange={(e) => handleSearch(e)}
         />
         <button
-          className="w-max ml-4 flex items-center cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
+          className="w-max md:ml-4 flex items-center cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
           onClick={() => {
             const listOfRestaurant = restaurant.filter(
               (item) => item.data.avgRating >= 4
@@ -81,13 +81,10 @@ const Body = () => {
       {showRestaurant ? (
         <Shimmer />
       ) : (
-        <div className="flex gap-4 flex-wrap p-4">         
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 justify-center lg:grid-cols-3 xl:grid-cols-4 p-4">
           {filterRestraurant?.map((item) => {
             return (
-              <span
-                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4 my-2"
-                key={item?.info?.id}
-              >
+              <span className=" my-2" key={item?.info?.id}>
                 <Link
                   to={`restaurants/${item?.info?.id}`}
                   state={{ item: item }}

@@ -17,7 +17,7 @@ const RestaurantMenu = () => {
     const { name, imageId, category, description, ratings, inStock, price } =
       restData;
     return (
-      <div className="w-80 border rounded-lg shadow-md hover:shadow-lg">
+      <div className="w-72 border mt-10 rounded-lg shadow-md hover:shadow-lg">
         {imageId && (
           <img
             src={CDN_URL + imageId}
@@ -114,15 +114,13 @@ const RestaurantMenu = () => {
       </div>
       <div className="mt-3">
         <h2 className="font-semibold text-2xl font-sans"> Menu Items </h2>
-        <div className="flex flex-wrap gap-4 mt-4">
+        <div className="grid sm:grid-cols-2 md:grid-cols-2 justify-center lg:grid-cols-3 xl:grid-cols-4 mt-4">
           {resInfo.restMenu &&
             resInfo.restMenu?.map((item) => (
-              <div
-                className="w-full sm:w-1/2 md:w-1/2 lg:w-1/3 xl:w-1/4"
+              <RestraurantMenuCard
                 key={item.card.info.id}
-              >
-                <RestraurantMenuCard restData={item.card.info} />
-              </div>
+                restData={item.card.info}
+              />
             ))}
         </div>
       </div>
