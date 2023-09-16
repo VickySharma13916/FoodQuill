@@ -53,6 +53,8 @@ const Body = () => {
       : mockdata?.filter((item) =>
           item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
         );
+
+  console.log(restaurant, "resturant");
   return (
     <div className="food_body my-4">
       <div className="px-4 flex gap-4 md:flex-row flex-col">
@@ -68,8 +70,8 @@ const Body = () => {
         <button
           className="w-max md:ml-4 flex items-center cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
           onClick={() => {
-            const listOfRestaurant = restaurant.filter(
-              (item) => item.data.avgRating >= 4
+            const listOfRestaurant = restaurant?.filter(
+              (item) => item?.avgRating >= 4
             );
             setRestaurant(listOfRestaurant);
           }}
