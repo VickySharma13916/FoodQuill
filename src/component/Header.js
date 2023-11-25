@@ -41,9 +41,9 @@ const Header = () => {
         <Link to="/" className="px-2 cursor-pointer">
           Home
         </Link>
-        <Link to="/about" className="px-2 cursor-pointer">
+        {/* <Link to="/about" className="px-2 cursor-pointer">
           About Us
-        </Link>
+        </Link> */}
         <Link to="/contact" className="px-2 cursor-pointer">
           Contact Us
         </Link>
@@ -58,20 +58,20 @@ const Header = () => {
         <Link to="/grocery" className="px-2 cursor-pointer">
           Grocery
         </Link>
-        <div className="flex flex-col items-center justify-center relative pl-2 pr-6 text-indigo-800 font-bold text-xl">
+        {/* <div className="flex flex-col items-center justify-center relative pl-2 pr-6 text-indigo-800 font-bold text-xl">
           {user}
           {online ? (
             <span className="w-4 h-4 absolute top-0 right-3 border rounded-full bg-green-600"></span>
           ) : (
             <span className="w-4 h-4 absolute top-0 right-3 border rounded-full bg-red-600"></span>
           )}
-        </div>
-        <div
+        </div> */}
+        {/* <div
           className="flex items-center w-max cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-2 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
           onClick={() => setLogin(!login)}
         >
           {login ? "Login" : "Logout"}
-        </div>
+        </div> */}
       </div>
     </div>
   );
