@@ -1,7 +1,7 @@
 import React, { useState, useContext } from "react";
 import { Link } from "react-router-dom";
 import useOnlineStatus from "../Utils/useOnlineStatus";
-import logo from "../images/foodQuilllogo.png";
+import logo from "../images/logo.png";
 import UserContext from "../Utils/UserContext";
 import { TfiShoppingCartFull } from "react-icons/tfi";
 import { useSelector } from "react-redux";
