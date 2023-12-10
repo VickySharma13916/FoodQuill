@@ -1,6 +1,7 @@
 import React from "react";
 import { CDN_URL } from "../Utils/constant";
 import { FaStar } from "react-icons/fa";
+import restimage from "../images/food_image.jpg";
 const RestaurantCard = ({ restaurantData }) => {
   const {
     name,
@@ -14,12 +15,21 @@ const RestaurantCard = ({ restaurantData }) => {
   } = restaurantData?.info;
   return (
     <div className="border w-72 rounded-lg shadow-md hover:shadow-lg">
-      <img
-        src={`${CDN_URL}${cloudinaryImageId}`}
-        loading="lazy"
-        alt="restaurant"
-        className="rounded-t-lg"
-      />
+      {cloudinaryImageId ? (
+        <img
+          src={`${CDN_URL}${cloudinaryImageId}`}
+          loading="lazy"
+          alt="restaurant"
+          className="rounded-t-lg"
+        />
+      ) : (
+        <img
+          src={restimage}
+          loading="lazy"
+          alt="restaurant"
+          className="rounded-t-lg"
+        />
+      )}
       <div className="h-48 p-4">
         <div className="text-xl mt-2 font-semibold truncate">{name}</div>
         <div className="truncate">{address}</div>

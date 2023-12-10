@@ -5,6 +5,7 @@ import useRestaurantMenu from "../Utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
 import { FaStar } from "react-icons/fa";
 import RestaurantCategory from "./RestaurantCategory";
+import restimage from "../images/food_image.jpg";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
@@ -17,9 +18,16 @@ const RestaurantMenu = () => {
       restData;
     return (
       <div className="w-72 border mt-10 rounded-lg shadow-md hover:shadow-lg">
-        {imageId && (
+        {imageId ? (
           <img
             src={CDN_URL + imageId}
+            loading="lazy"
+            alt="restaurant"
+            className="rounded-t-lg"
+          />
+        ) : (
+          <img
+            src={restimage}
             loading="lazy"
             alt="restaurant"
             className="rounded-t-lg"
