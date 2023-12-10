@@ -46,12 +46,10 @@ const Body = () => {
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
-  const filterRestraurant =
-    restaurant?.length > 0
-      ? restaurant
-      : mockdata?.filter((item) =>
-          item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
-        );
+  const filterData = restaurant?.length > 0 ? restaurant : mockdata;
+  const filterRestraurant = filterData?.filter((item) =>
+    item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
+  );
   return (
     <div className="food_body my-4">
       <div className="px-4 flex gap-4 md:flex-row flex-col">

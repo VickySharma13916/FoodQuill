@@ -19,33 +19,40 @@ const Header = () => {
   //   console.log("Useeffect called");
   // }, []);
   return (
-    <div className="header sticky top-0 z-20 flex flex-wrap justify-between items-center shadow-md px-4 bg-slate-100">
-      <Link to="/" className="flex-shrink-0">
-        <img
-          src={logo}
-          alt="logo"
-          className="logo w-20 brightness-95 cursor-pointer"
-        />
-      </Link>
-      <button
-        className="block sm:hidden px-2 py-1 rounded bg-indigo-600 text-white"
-        onClick={() => setMenuOpen(!menuOpen)}
-      >
-        Menu
-      </button>
+    <div className="header sticky top-0 z-20 flex md:flex-row flex-col justify-between items-center shadow-md px-4 bg-slate-100">
+      <div className="flex justify-between items-center w-full">
+        <Link to="/" className="flex-shrink-0">
+          <img
+            src={logo}
+            alt="logo"
+            className="logo w-20 brightness-95 cursor-pointer"
+          />
+        </Link>
+        <button
+          className="block sm:hidden px-2 py-1 rounded bg-indigo-600 text-white"
+          onClick={() => setMenuOpen(!menuOpen)}
+        >
+          {menuOpen ? "Close" : "Menu"}
+        </button>
+      </div>
       <div
         className={`${
-          menuOpen ? "flex flex-col justify-end" : "hidden"
-        } sm:flex sm:items-center sm:justify-center sm:mt-2`}
+          menuOpen
+            ? "flex md:justify-end justify-start w-full"
+            : "sm:flex md:justify-end sm:justify-start w-full hidden"
+        } sm:mt-2`}
       >
         <Link to="/" className="px-2 cursor-pointer">
           Home
         </Link>
         {/* <Link to="/about" className="px-2 cursor-pointer">
           About Us
-        </Link> */}
+        </Link>
         <Link to="/contact" className="px-2 cursor-pointer">
           Contact Us
+        </Link> */}
+        <Link to="/grocery" className="px-2 cursor-pointer">
+          Grocery
         </Link>
         <Link to="/cart" className="px-2 cursor-pointer relative">
           <div className="flex">
@@ -54,9 +61,6 @@ const Header = () => {
               {cart.length}
             </div>
           </div>
-        </Link>
-        <Link to="/grocery" className="px-2 cursor-pointer">
-          Grocery
         </Link>
         {/* <div className="flex flex-col items-center justify-center relative pl-2 pr-6 text-indigo-800 font-bold text-xl">
           {user}

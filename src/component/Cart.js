@@ -2,6 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { CDN_URL } from "../Utils/constant";
 import { clearCart, removeItem } from "../Utils/cartSlice";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartItem = useSelector((store) => store.cart.item);
@@ -10,14 +11,16 @@ const Cart = () => {
     dispatch(removeItem(data));
   };
   return (
-    <div className="my-8 p-8 w-2/3 border border-slate-100 bg-slate-100 rounded-lg mx-auto">
+    <div className="md:my-8 my-4 md:p-8 p-4 md:w-2/3 w-full border border-slate-100 bg-slate-100 rounded-lg mx-auto">
       <div
         className={`flex ${
           cartItem.length === 0 ? "justify-center" : "justify-end"
         }`}
       >
         {cartItem.length === 0 ? (
-          <div className="text-xl text-center">Add Item to cart</div>
+          <div className="text-xl text-center cursor-pointer">
+            <Link to="/">Add Item to cart</Link>
+          </div>
         ) : (
           <button
             className="border border-red-200 bg-red-500 px-2 py-1 text-white rounded"
@@ -50,7 +53,7 @@ const Cart = () => {
                   alt="food-item"
                 />
               )}
-              <div className="absolute bottom-2 right-2">
+              <div className="absolute md:bottom-2 bottom-0 right-0 md:right-1">
                 <button
                   className="px-2 py-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500"
                   onClick={() => handleRemomveItem(data)}

@@ -15,7 +15,7 @@ const CategoryItemList = ({ item }) => {
         return (
           <div
             key={data?.card?.info?.id}
-            className="flex border-b-2 border-slate-300 h-24 py-2 items-center justify-between"
+            className="flex border-b-2 border-slate-300 py-2 items-center justify-between"
           >
             <div className="w-9/12">
               <div className="text-xl">
@@ -36,9 +36,9 @@ const CategoryItemList = ({ item }) => {
                   alt="food-item"
                 />
               )}
-              <div className="absolute bottom-2 right-2">
+              <div className="absolute bottom-1 right-1 md:bottom-3 md:right-3">
                 <button
-                  className="px-2 py-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500"
+                  className="p-1 rounded shadow-lg hover:shadow-xl font-semibold hover:bg-green-500 hover:text-white bg-white text-green-500"
                   onClick={() => handleAddItem(itemData)}
                 >
                   Add +

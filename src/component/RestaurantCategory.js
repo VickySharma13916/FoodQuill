@@ -4,22 +4,28 @@ import CategoryItemList from "./CategoryItemList";
 
 const RestaurantCategory = ({ category, isVisible, setShowItem }) => {
   return (
-    <div className="border shadow-lg rounded-lg w-full md:w-8/12 my-4 bg-slate-100 p-4">
-      <div
-        className="flex justify-between items-center cursor-pointer"
-        onClick={() => setShowItem()}
-      >
-        <div className="text-2xl font-bold">
-          {category?.title} ({category?.itemCards?.length})
-        </div>
-        <button>{isVisible ? <RiArrowUpSLine /> : <RiArrowDownSLine />}</button>
-      </div>
-      {isVisible && (
-        <div className="mt-2">
-          <CategoryItemList item={category?.itemCards} />
+    <>
+      {category?.title && category?.itemCards?.length > 0 && (
+        <div className="border shadow-lg rounded-lg w-full md:w-8/12 my-4 bg-slate-100 p-4">
+          <div
+            className="flex justify-between items-center cursor-pointer"
+            onClick={() => setShowItem()}
+          >
+            <div className="text-2xl font-bold">
+              {category?.title} ({category?.itemCards?.length})
+            </div>
+            <button>
+              {isVisible ? <RiArrowUpSLine /> : <RiArrowDownSLine />}
+            </button>
+          </div>
+          {isVisible && (
+            <div className="mt-2">
+              <CategoryItemList item={category?.itemCards} />
+            </div>
+          )}
         </div>
       )}
-    </div>
+    </>
   );
 };
 
