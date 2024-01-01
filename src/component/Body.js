@@ -19,6 +19,7 @@ const Body = () => {
   const [searchRes, setSearchRes] = useState("");
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const fetchData = async () => {
+    setRestaurant(mockdata);
     // const data = await fetch(
     //   "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     // );
@@ -46,10 +47,8 @@ const Body = () => {
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
-  const filterData =
-    // restaurant?.length > 0 ? restaurant :
-    mockdata;
-  const filterRestraurant = filterData?.filter((item) =>
+  // const filterData = restaurant?.length > 0 ? restaurant : mockdata;
+  const filterRestraurant = restaurant?.filter((item) =>
     item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
   );
   return (
@@ -68,7 +67,7 @@ const Body = () => {
           className="w-max md:ml-4 flex items-center cursor-pointer justify-center rounded border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none"
           onClick={() => {
             const listOfRestaurant = restaurant?.filter(
-              (item) => item?.avgRating >= 4
+              (item) => item?.info?.avgRating >= 4
             );
             setRestaurant(listOfRestaurant);
           }}
