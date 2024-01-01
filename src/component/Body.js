@@ -15,29 +15,29 @@ const Body = () => {
   // Local State Variable - super powerful variable
   // Whenever a state variable is updated, react trigger a reconciliation cycle(re-render the component)
   const [restaurant, setRestaurant] = useState([]);
-  const [showRestaurant, setShowRestaurant] = useState(true);
+  const [showRestaurant, setShowRestaurant] = useState(false);
   const [searchRes, setSearchRes] = useState("");
   const RestaurantCardPromoted = withPromotedLabel(RestaurantCard);
   const fetchData = async () => {
-    const data = await fetch(
-      "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
+    // const data = await fetch(
+    //   "https://corsproxy.io/?https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.7040592&lng=77.10249019999999&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    // );
     // const result = await fetch(
     //   "https://corsproxy.io/?https://www.swiggy.com/mapi/homepage/getCards?lat=28.7040592&lng=77.10249019999999"
     // );
     // const resultJson = await result.json();
     // console.log(resultJson);
-    const json = await data.json();
+    // const json = await data.json();
     //optional chaining
-    setRestaurant(
-      json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
-      // .length > 0
-      // ? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-      //     ?.restaurants
-      // : resultJson?.data?.success?.cards[4]?.gridWidget?.gridElements
-      //     ?.infoWithStyle?.restaurants
-    );
-    setShowRestaurant(false);
+    // setRestaurant(
+    // json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+    // .length > 0
+    // ? json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
+    //     ?.restaurants
+    // : resultJson?.data?.success?.cards[4]?.gridWidget?.gridElements
+    //     ?.infoWithStyle?.restaurants
+    // );
+    // setShowRestaurant(false);
   };
   useEffect(() => {
     //when the body component is render is completed than the useEffect callback function is called
@@ -46,7 +46,9 @@ const Body = () => {
   const handleSearch = (e) => {
     setSearchRes(e.target.value);
   };
-  const filterData = restaurant?.length > 0 ? restaurant : mockdata;
+  const filterData =
+    // restaurant?.length > 0 ? restaurant :
+    mockdata;
   const filterRestraurant = filterData?.filter((item) =>
     item?.info?.name?.toLowerCase().includes(searchRes?.toLowerCase())
   );

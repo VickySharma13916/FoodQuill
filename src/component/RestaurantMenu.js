@@ -1,75 +1,76 @@
-import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import React from "react";
+import { FaStar } from "react-icons/fa";
+import { useLocation, useParams } from "react-router-dom";
 import { CDN_URL } from "../Utils/constant";
 import useRestaurantMenu from "../Utils/useRestaurantMenu";
 import Shimmer from "./Shimmer";
-import { FaStar } from "react-icons/fa";
-import RestaurantCategory from "./RestaurantCategory";
-import restimage from "../images/food_image.jpg";
+// import restimage from "../images/food_image.jpg";
 
 const RestaurantMenu = () => {
   const { resId } = useParams();
   const resInfo = useRestaurantMenu(resId);
-  const [showItem, setShowItem] = useState(null);
+  // const [showItem, setShowItem] = useState(null);
+  const location = useLocation();
+  const itemData = location.state.item;
   const { name, avgRating, totalRatings, cloudinaryImageId, cuisines, slugs } =
-    resInfo.restaurantMenu;
-  const RestraurantMenuCard = ({ restData }) => {
-    const { name, imageId, category, description, ratings, inStock, price } =
-      restData;
-    return (
-      <div className="w-72 border mt-10 rounded-lg shadow-md hover:shadow-lg">
-        {imageId ? (
-          <img
-            src={CDN_URL + imageId}
-            loading="lazy"
-            alt="restaurant"
-            className="rounded-t-lg"
-          />
-        ) : (
-          <img
-            src={restimage}
-            loading="lazy"
-            alt="restaurant"
-            className="rounded-t-lg"
-          />
-        )}
-        <div className="h-52 p-4">
-          <div className="truncate text-xl mt-2 font-semibold">{name}</div>
-          <div className="flex justify-between mt-2">
-            <div
-              className={`flex items-center text-white ${
-                ratings?.aggregatedRating?.rating > 0
-                  ? "bg-green-500 px-2 py-1 rounded"
-                  : "px-2 py-1 rounded bg-red-500"
-              } `}
-            >
-              {ratings?.aggregatedRating?.rating > 0 ? (
-                <>
-                  {ratings?.aggregatedRating?.rating}
-                  <FaStar fill="#ffd401" className="ml-1" />
-                </>
-              ) : (
-                "N/A"
-              )}
-            </div>
-            <div className="available">Stock Available :- {inStock}</div>
-          </div>
-          <div className="card-text mt-1">
-            <div className="flex justify-between mt-2">
-              <div className="truncate">{category}</div>
-              <div className="text-xl font-semibold">
-                {price && <>₹{price / 100}</>}
-              </div>
-            </div>
-            <div className=" line-clamp-3">
-              {description ? description : "Description Menu Item"}
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
-  return resInfo.restaurantMenu.length <= 0 ? (
+    itemData.info;
+  // const RestraurantMenuCard = ({ restData }) => {
+  //   const { name, imageId, category, description, ratings, inStock, price } =
+  //     restData;
+  //   return (
+  //     <div className="w-72 border mt-10 rounded-lg shadow-md hover:shadow-lg">
+  //       {imageId ? (
+  //         <img
+  //           src={CDN_URL + imageId}
+  //           loading="lazy"
+  //           alt="restaurant"
+  //           className="rounded-t-lg"
+  //         />
+  //       ) : (
+  //         <img
+  //           src={restimage}
+  //           loading="lazy"
+  //           alt="restaurant"
+  //           className="rounded-t-lg"
+  //         />
+  //       )}
+  //       <div className="h-52 p-4">
+  //         <div className="truncate text-xl mt-2 font-semibold">{name}</div>
+  //         <div className="flex justify-between mt-2">
+  //           <div
+  //             className={`flex items-center text-white ${
+  //               ratings?.aggregatedRating?.rating > 0
+  //                 ? "bg-green-500 px-2 py-1 rounded"
+  //                 : "px-2 py-1 rounded bg-red-500"
+  //             } `}
+  //           >
+  //             {ratings?.aggregatedRating?.rating > 0 ? (
+  //               <>
+  //                 {ratings?.aggregatedRating?.rating}
+  //                 <FaStar fill="#ffd401" className="ml-1" />
+  //               </>
+  //             ) : (
+  //               "N/A"
+  //             )}
+  //           </div>
+  //           <div className="available">Stock Available :- {inStock}</div>
+  //         </div>
+  //         <div className="card-text mt-1">
+  //           <div className="flex justify-between mt-2">
+  //             <div className="truncate">{category}</div>
+  //             <div className="text-xl font-semibold">
+  //               {price && <>₹{price / 100}</>}
+  //             </div>
+  //           </div>
+  //           <div className=" line-clamp-3">
+  //             {description ? description : "Description Menu Item"}
+  //           </div>
+  //         </div>
+  //       </div>
+  //     </div>
+  //   );
+  // };
+  return itemData.info.length <= 0 ? (
     <Shimmer />
   ) : (
     <div className="p-4">
@@ -100,13 +101,13 @@ const RestaurantMenu = () => {
                 <span className="ml-4">{totalRatings} Ratings</span>
               </div>
               <div className="mt-2 text-xl">
-                {slugs.restaurant}, {slugs.city}
+                {slugs?.restaurant}, {slugs?.city}
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="my-4">
+      {/* <div className="my-4">
         {resInfo?.category.map((category, index) => {
           return (
             //Controlled Component
@@ -118,8 +119,8 @@ const RestaurantMenu = () => {
             />
           );
         })}
-      </div>
-      <div className="mt-3">
+      </div> */}
+      {/* <div className="mt-3">
         <h2 className="font-semibold text-2xl font-sans"> Menu Items </h2>
         <div className="grid sm:grid-cols-2 md:grid-cols-2 justify-center lg:grid-cols-3 xl:grid-cols-4 mt-4">
           {resInfo.restMenu &&
@@ -130,7 +131,7 @@ const RestaurantMenu = () => {
               />
             ))}
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
